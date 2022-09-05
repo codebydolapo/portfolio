@@ -4,6 +4,7 @@ import Intro from './Intro';
 import Portfolio from './Portfolio';
 import About from './About'
 import Skills from './Skills';
+import Blog from './Blog';
 
 
 function Mainbody(){
@@ -17,6 +18,7 @@ function Mainbody(){
             <About/>
             <Portfolio/>
             <Skills/>
+            <Blog/>
         </div>
     )
 }

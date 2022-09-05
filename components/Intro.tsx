@@ -11,7 +11,7 @@ function Intro() {
                     <img className={`w-[15rem] h-[15rem] rounded-full absolute bottom-[-7rem] border-[5px] border-white`} alt='' src='/images/work3.jpg' />
                 </div>
                 <div className={`w-full h-1/2 flex flex-col items-center justify-center mt-[4rem]`}>
-                    <h1 className={`text-6xl font-extrabold text-black `}>Bashorun Dolapo</h1>
+                    <h1 className={`text-6xl font-extrabold text-black`}>Bashorun Dolapo</h1>
                     <h3 className={`text-xl font-bold my-[1rem]`} >
                         <Typewriter
                             options={{

@@ -20,16 +20,17 @@ function Navbar(){
         }
     }
 
+    //
     return(
-        <div className = {`w-full h-[50px] bg-[#f1f5f8] flex flex-row fixed z-[5]`}>
+        <div className = {`w-full h-[50px] bg-[#60b4f5] flex flex-row fixed z-[5]`}>
             <div className = {`w-1/2 h-full px-2 flex flex-row justify-start items-center`}>
                 <img className = {`h-[40px] w-[40px] rounded-full mr-3`} src = '/icons/cbd.png' alt = ''/>
-                <h1 className = {`text-[#1c1e21] text-3xl`}>CodeByDolapo.Com</h1>
+                <h1 className = {`text-[white] text-3xl font-bold font-oswald`}>CodeByDolapo.Com</h1>
             </div>
             <div className = {`w-1/2 h-full px-3 flex flex-row justify-end items-center`}>
                 <div className = {`${styles.hamburger}`} onClick = {handleBurgerState}>
                     <div className={`${styles.line}`} id = {`${hamburgerState && styles.line1}`}></div>
-                    <div className={`${styles.line}`} id = {`${hamburgerState && styles.line2}`}></div>
+                    <div className={`${styles.middleLine}`} id = {`${hamburgerState && styles.line2}`}></div>
                     <div className={`${styles.line}`} id = {`${hamburgerState && styles.line3}`}></div>
                 </div>
             </div>
