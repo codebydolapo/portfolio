@@ -1,3 +1,16 @@
-.portfolioitem{
+.portfolioitem {
     box-shadow: -1px 1px 10px rgba(128, 128, 128, 0.486);
+}
+
+.direction {
+    height: 1.5rem;
+    color: black;
+}
+
+.directionDiv {
+    transition: all ease 500ms;
+}
+
+.directionDiv:hover {
+    transform: scale(1.02)
 }

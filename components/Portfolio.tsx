@@ -1,5 +1,6 @@
 import PortfolioItem from "./PortfolioItem"
 import styles from '../styles/portfolio.module.css'
+import { portfolioData } from "../data/portfolioData"
 
 function Portfolio(){
     return(
@@ -10,15 +11,15 @@ function Portfolio(){
                     {/* <p className = {`text-[#3578e5]`}>See All</p> */}
                 </div>
                 <div className = {`w-full h-[85%] flex flex-wrap flex-row items-start justify-between ${styles.portfolioContainer}`}>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
-                    <PortfolioItem/>
+                    {portfolioData.map(({title, desc, images, liveLink, repoLink})=>{
+                        return <PortfolioItem
+                            title = {title}
+                            desc = {desc}
+                            liveLink = {liveLink}
+                            repoLink = {repoLink}
+                            images= {images}
+                        />
+                    })}
                 </div>
             </div>
         </div>
