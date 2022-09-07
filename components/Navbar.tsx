@@ -1,6 +1,6 @@
 import styles from "../styles/navbar.module.css"
 import {useDispatch, useSelector} from 'react-redux'
-import {activateHamburger, deactivateHamburger} from './reducers/actions'
+import {activateHamburger, deactivateHamburger} from '../reducers/actions'
 
 interface HamburgerState{
     hamburgerState: boolean

@@ -3,7 +3,7 @@ import styles from "../styles/menu.module.css"
 import { BookmarkIcon, HomeIcon, BriefcaseIcon, CogIcon, MicrophoneIcon, MailIcon } from "@heroicons/react/outline"
 import Link from "next/link"
 import {useDispatch, useSelector} from 'react-redux'
-import {activateHamburger, deactivateHamburger} from './reducers/actions'
+import {activateHamburger, deactivateHamburger} from '../reducers/actions'
 
 function Menu() {
 

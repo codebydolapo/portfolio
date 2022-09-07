@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { allReducers } from '../components/reducers/reducers'
+import { allReducers } from '../reducers/reducers'
 
 const store = createStore(allReducers)
 
