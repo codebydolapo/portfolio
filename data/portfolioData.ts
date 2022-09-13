@@ -5,5 +5,12 @@ export const portfolioData = [
         images: ['images/sequin/sequin.png', 'images/sequin/sequinRentals.png'],
         liveLink: '',
         repoLink: ''
-    }
+    },
+    {
+        title: 'FlipCard: Blockchain NFT Reward Game',
+        desc: "Memory Game That Rewards Players With NFTs When They Win",
+        images: ['images/flipcard/flipcard.png'],
+        liveLink: '',
+        repoLink: ''
+    },
 ]

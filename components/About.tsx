@@ -17,7 +17,7 @@ function Portfolio(){
                     <AboutItem
                     icon={'hire'}
                     header={'Why Hire Me?'}
-                    desc={'I am committed, highly motivated and unwilling to rest until i get s*it done'}
+                    desc={'I am a committed, highly motivated individual with an undying passion for learning'}
                     />
                     <AboutItem
                     icon={'education'}

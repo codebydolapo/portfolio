@@ -15,7 +15,7 @@ function Intro() {
                     <h3 className={`text-xl font-bold my-[1rem]`} >
                         <Typewriter
                             options={{
-                                strings: ["Web Developer", "Blockchain Jedi", "I/O Enthusiast"],
+                                strings: ["Web Developer", "Blockchain Jedi", "I/O Enthusiast", "Technical Writer"],
                                 autoStart: true,
                                 loop: true
                             }}

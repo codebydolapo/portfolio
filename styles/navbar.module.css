@@ -4,7 +4,7 @@
     /* border: 1px solid white; */
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     cursor: pointer;
     transition: all ease 500ms;

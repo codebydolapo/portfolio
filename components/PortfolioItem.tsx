@@ -62,7 +62,7 @@ function PortfolioItem({title, desc, images, liveLink, repoLink}: Props){
 
 
     return(
-        <div className = {`min-h-[35vw] h-auto w-[40vw] my-[3rem] flex flex-col`}>
+        <div className = {`min-h-[35vw] h-auto w-[40rem] my-[3rem] flex flex-col rounded-lg`}>
             <div className = {`w-full h-[3rem] flex flex-row justify-start items-center pl-3 `}>
                 <img className = {`w-[40px] h-[40px] rounded-full mr-3`} src= '/images/work2.jpg' alt = ''/>
                 <h1 className = {`font-extrabold text-xl uppercase`}>{title}</h1>
@@ -70,11 +70,11 @@ function PortfolioItem({title, desc, images, liveLink, repoLink}: Props){
             <div className = {`w-full h-[4rem] text-sm pl-3 pt-3 flex justify-start items-start `}>
                 <p className = {``}>{desc}</p>
             </div>
-            <div className = {`w-full min-h-[20rem] h-auto border-2 border-grey flex justify-center relative`}>
-                <img className = {`w-full h-auto rounded-lg`} src= {images[pictureIndex]} alt = ''/>
+            <div className = {`w-full min-h-[20rem] h-auto flex justify-center relative`}>
                 {leftNavVisibility && <div className = {`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer ${styles.directionDiv}`}>
                     <ChevronLeftIcon className = {`${styles.direction}`} onClick = {handlePicture}/>
                 </div>}
+                <img className = {`w-full h-auto rounded-lg`} src= {images[pictureIndex]} alt = ''/>
                 {rightNavVisibility && <div className = {`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] right-2 flex justify-center items-center cursor-pointer ${styles.directionDiv}`}>
                     <ChevronRightIcon className = {`${styles.direction}`} onClick = {handlePicture}/>
                 </div>}
