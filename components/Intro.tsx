@@ -6,9 +6,9 @@ function Intro() {
 
     return (
         <div className={`w-full h-[100vh] flex justify-center align-center`} id='home'>
-            <div className={`w-[90%] h-full`}>
+            <div className={`w-[95%] h-full`}>
                 <div className={`w-full h-1/2 flex justify-center items-center relative ${styles.banner}`}>
-                    <img className={`w-[15rem] h-[15rem] rounded-full absolute bottom-[-7rem] border-[5px] border-white`} alt='' src='/images/work3.jpg' />
+                    <img className={`w-[15rem] h-[15rem] rounded-full absolute bottom-[-7rem] border-[5px] border-white`} alt='' src='/images/dp.png' />
                 </div>
                 <div className={`w-full h-1/2 flex flex-col items-center justify-center mt-[4rem]`}>
                     <h1 className={`text-6xl font-extrabold text-black`}>Bashorun Dolapo</h1>
