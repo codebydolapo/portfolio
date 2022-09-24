@@ -3,8 +3,8 @@ import styles from '../styles/aboutitem.module.css'
 
 function AboutItem({ icon, header, desc }: {icon: string, header: string, desc: string}) {
     return (
-        <div className={`w-full h-[10em] my-2 flex`}>
-            <div className={`w-[10em] h-full flex items-center justify-center`}>
+        <div className={`w-[95%] md:min-h-[10em] my-2 flex justify-center items-center rounded-xl xs:min-h-[5em] border-2 border-grey`}>
+            <div className={`w-[10%] h-full flex items-center justify-center`}>
                 {
                 icon == 'smiley' ? <InformationCircleIcon className={`${styles.aboutIcon}`} /> : 
                 icon == 'hire' ? <BriefcaseIcon className={`${styles.aboutIcon}`} /> : 
@@ -12,9 +12,9 @@ function AboutItem({ icon, header, desc }: {icon: string, header: string, desc: 
                 <ExclamationTriangleIcon className={`${styles.aboutIcon}`}/>
                 }
             </div>
-            <div className={`w-auto h-full px-5 flex flex-col items-start justify-center`}>
-                <h1 className={`text-4xl font-extrabold my-2`}>{header}</h1>
-                <h3 className={`text-xl capitalize`}>{desc}</h3>
+            <div className={`w-[90%] h-full px-5 flex flex-col items-start justify-center`}>
+                <h1 className={`md:text-4xl font-extrabold my-2 xs:text-xl`}>{header}</h1>
+                <h3 className={`md:text-lg xs:text-sm`}>{desc}</h3>
             </div>
         </div>
     )

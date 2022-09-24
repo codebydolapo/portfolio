@@ -62,31 +62,32 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
 
 
     return (
-        <div className={`min-h-[35vw] h-auto w-[48vw] flex flex-col rounded-lg`}>
-            <div className={` rounded-lg mb-2`}>
-                <div className={`w-full h-[3rem] flex flex-row justify-start items-center pl-3 `}>
-                    <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/work2.jpg' alt='' />
-                    <h1 className={`font-extrabold text-xl uppercase`}>{title}</h1>
-                </div>
-                <div className={`w-full h-[4rem] text-[1rem] pl-3 pt-3 flex justify-start items-start `}>
-                    <p className={``}>{desc}</p>
-                </div>
-            </div>
-            <div className={`w-full min-h-[20rem] h-auto flex justify-center relative`}>
+        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:my-0  rounded-lg xs:w-[99vw] xs:my-[1rem]`}>
+            
+            <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative xs:min-h-[50vw]`}>
                 {leftNavVisibility && <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer ${styles.directionDiv}`}>
                     <ChevronLeftIcon className={`${styles.direction}`} onClick={handlePicture} />
                 </div>}
-                <img className={`w-full h-auto rounded-lg border-2 border-grey`} src={images[pictureIndex]} alt='' />
+                <img className={`w-full h-auto rounded-lg z-[2]`} src={images[pictureIndex]} alt='' />
                 {rightNavVisibility && <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] right-2 flex justify-center items-center cursor-pointer ${styles.directionDiv}`}>
                     <ChevronRightIcon className={`${styles.direction}`} onClick={handlePicture} />
                 </div>}
             </div>
-            <div className={`w-full h-[3.5rem] flex justify-start items-center `}>
-                <Link href={liveLink} className={`w-auto h-auto border-2 border-grey`}>
-                    <button className={`w-[42%] h-[2.5rem] bg-[#1877f2] rounded-md text-white mx-3`}>View Live</button>
+            <div className={` rounded-lg mb-2`}>
+                <div className={`w-full h-[3rem] flex flex-row justify-start items-center md:pl-3 xs:pl-1`}>
+                    <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/work2.jpg' alt='' />
+                    <h1 className={`font-extrabold md:text-xl uppercase xs:text-sm`}>{title}</h1>
+                </div>
+                {/* <div className={`w-full h-[4rem] text-[1rem] pl-3 pt-3 flex justify-start items-start `}>
+                    <p className={``}>{desc}</p>
+                </div> */}
+            </div>
+            <div className={`w-full md:h-[3.5rem] flex justify-start items-center xs:h-[2.5rem]`}>
+                <Link href={liveLink} className={`w-auto h-auto`}>
+                    <button className={`w-[42%] md:h-[2.5rem] bg-[#1877f2] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
                 </Link>
                 <Link href={repoLink} className={`w-auto h-auto`}>
-                    <button className={`min-w-[42%] h-[2.5rem] bg-[#4b4f56] rounded-md text-white mx-3`}>See Repo</button>
+                    <button className={`min-w-[42%] md:h-[2.5rem] bg-[#4b4f56] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
                 </Link>
             </div>
         </div>

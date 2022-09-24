@@ -33,6 +33,22 @@ export const skillsData = [
     }, 
     {
         icon: '/icons/skills/sanityIcon.png',
-        title: 'Sanity'
+        title: 'Sanity-CMS'
+    }, 
+    {
+        icon: '/icons/skills/moralis.jfif',
+        title: 'Moralis'
+    }, 
+    {
+        icon: '/icons/skills/web3.png',
+        title: 'Web3-JS'
+    }, 
+    {
+        icon: '/icons/skills/truffle.png',
+        title: 'Truffle'
+    }, 
+    {
+        icon: '/icons/skills/thirdweb.png',
+        title: 'Thirdweb'
     }, 
 ]
