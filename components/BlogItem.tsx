@@ -7,7 +7,7 @@ function BlogItem(){
             <div className = {`w-full h-[3rem] flex justify-start items-center pl-2`}>
                 <h1 className={`font-bold font-oswald text-lg`}>Some Blog Post</h1>
             </div>
-            <div className = {`w-full min-h-[20rem] h-auto flex justify-center relative rounded-xl mb-2 overflow-hidden object-contain xs:min-h-[50vw]`}>
+            <div className = {`w-full md:min-h-[20rem] h-auto flex justify-center relative rounded-xl mb-2 overflow-hidden object-contain xs:min-h-[50vw]`}>
                 <img className={`h-auto w-full rounded-xl`} alt = '' src= '/images/work3.jpg'/>
             </div>
             <div className = {`w-full h-[5rem] overflow-hidden md:pl-0 xs:pl-2`}>

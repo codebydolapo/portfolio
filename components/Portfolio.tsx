@@ -17,6 +17,7 @@ function Portfolio(){
                             liveLink = {liveLink}
                             repoLink = {repoLink}
                             images= {images}
+                            key= {title}
                         />
                     })}
                 </div>
