@@ -73,15 +73,15 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
                     <ChevronRightIcon className={`${styles.direction}`} onClick={handlePicture} />
                 </div>}
             </div>
-            <div className={` rounded-lg mb-2`}>
+            {/* <div className={` rounded-lg mb-2`}>
                 <div className={`w-full h-[3rem] flex flex-row justify-start items-center md:pl-3 xs:pl-1`}>
                     <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/work2.jpg' alt='' />
                     <h1 className={`font-extrabold md:text-xl uppercase xs:text-sm`}>{title}</h1>
                 </div>
                 {/* <div className={`w-full h-[4rem] text-[1rem] pl-3 pt-3 flex justify-start items-start `}>
                     <p className={``}>{desc}</p>
-                </div> */}
-            </div>
+                </div> }
+            </div> */}
             <div className={`w-full md:h-[3.5rem] flex justify-start items-center xs:h-[2.5rem]`}>
                 <Link href={liveLink} className={`w-auto h-auto`}>
                     <button className={`w-[42%] md:h-[2.5rem] bg-[#1877f2] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
