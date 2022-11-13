@@ -11,7 +11,7 @@ function Blog() {
                     <h1 className={`md:text-5xl font-extrabold xs:text-4xl`}>Blog</h1>
                 </div>
                 <div className = {`w-full min-h-[50rem] flex flex-wrap items-start justify-around`}>
-                    {blogData.map(({title, image, link, desc})=>{
+                    {blogData.map(({title, image, desc})=>{
                     return <BlogItem
                         title = {title}
                         image = {image}

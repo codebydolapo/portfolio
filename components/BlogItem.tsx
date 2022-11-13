@@ -1,7 +1,7 @@
 import styles from '../styles/blogitem.module.css'
 
 
-function BlogItem({image, title, desc, link}: {image: string, title: string, desc: string}){
+function BlogItem({image, title, desc}: {image: string, title: string, desc: string}){
     return(
         <div className = {`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-3 xs:w-[98vw] ${styles.blogitem}`}>
             <div className = {`w-full h-[3rem] flex justify-start items-center pl-2`}>
