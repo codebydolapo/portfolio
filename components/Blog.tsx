@@ -1,5 +1,6 @@
 import BlogItem from "./BlogItem"
 //import styles from '../styles/blog.module.css'
+import { blogData } from "../data/blogData"
 
 function Blog() {
     return (
@@ -9,10 +10,13 @@ function Blog() {
                     <h1 className={`md:text-5xl font-extrabold xs:text-4xl`}>Blog</h1>
                 </div>
                 <div className = {`w-full min-h-[50rem] flex flex-wrap items-start justify-around`}>
-                    <BlogItem/>
-                    <BlogItem/>
-                    <BlogItem/>
-                    <BlogItem/>
+                    {blogData.map(({title, image, link, desc})=>{
+                    return <BlogItem
+                        title = {title}
+                        image = {image}
+                        desc = {desc}
+                    />
+                    })}
                 </div>
             </div>
         // </div>

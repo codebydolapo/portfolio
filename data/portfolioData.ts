@@ -2,7 +2,7 @@ export const portfolioData = [
     {
         title: 'GelatoSwap: Crypto Exchange',
         desc: "Crypto Exchange With Native Cryptocurrency",
-        images: ['images/gelatoswap/gelatoswap.png', 'images/gelatoswap/gelatoswap2.png', 'images/gelatoswap/gelatoswap3.png'],
+        images: ['images/gelatoswap/gelatoswap2.png', 'images/gelatoswap/gelatoswap3.png', 'images/gelatoswap/gelatoswap.png'],
         liveLink: '',
         repoLink: ''
     },
@@ -16,7 +16,7 @@ export const portfolioData = [
     {
         title: 'Sequin: Blockchain Hotel App',
         desc: "Hotel Rental App On The Matic Blockchain, With Web3 Functionality: Built with Solidity, Moralis, Tailwind and Hardhat",
-        images: ['images/sequin/sequin.png', 'images/sequin/sequinRentals.png'],
+        images: ['images/sequin/sequinRevamped.png','images/sequin/sequin.png', 'images/sequin/sequinRentals.png'],
         liveLink: '',
         repoLink: ''
     },
