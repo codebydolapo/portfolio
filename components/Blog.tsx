@@ -1,6 +1,7 @@
 import BlogItem from "./BlogItem"
 //import styles from '../styles/blog.module.css'
 import { blogData } from "../data/blogData"
+import { maxHeaderSize } from "http"
 
 function Blog() {
     return (
@@ -15,6 +16,7 @@ function Blog() {
                         title = {title}
                         image = {image}
                         desc = {desc}
+                        key = {Math.floor(Math.random() * 1000000000)}
                     />
                     })}
                 </div>

@@ -16,6 +16,7 @@ function Skills(){
                             return <SkillsItem
                             title = {title}
                             icon = {icon}
+                            key = {Math.floor(Math.random() * 1000000000)}
                             />
                         })
                     }
