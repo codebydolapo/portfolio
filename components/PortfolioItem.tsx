@@ -1,4 +1,4 @@
-import styles from '../styles/PortfolioItem.module.css'
+import styles from '../styles/portfoliiItem.module.css'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import { useState } from 'react'
