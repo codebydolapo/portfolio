@@ -65,10 +65,11 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
         <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:my-0  rounded-lg xs:w-[99vw] xs:my-[1rem]`}>
             
             <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative xs:min-h-[50vw]`}>
-                {leftNavVisibility && <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer ${styles.directionDiv}`}>
+                {leftNavVisibility && 
+                <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer ${styles.directionDiv}`}>
                     <ChevronLeftIcon className={`${styles.direction}`} onClick={handlePicture} />
                 </div>}
-                <img className={`w-full h-auto rounded-lg z-[2]`} src={images[pictureIndex]} alt='' />
+                <img className={`w-full h-auto rounded-lg `} src={images[pictureIndex]} alt='' />
                 {rightNavVisibility && <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] right-2 flex justify-center items-center cursor-pointer ${styles.directionDiv}`}>
                     <ChevronRightIcon className={`${styles.direction}`} onClick={handlePicture} />
                 </div>}

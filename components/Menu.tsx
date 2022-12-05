@@ -2,8 +2,8 @@ import styles from "../styles/menu.module.css"
 // import { useSelector } from 'react-redux'
 import { BookmarkIcon, HomeIcon, BriefcaseIcon, CogIcon, MicrophoneIcon, MailIcon } from "@heroicons/react/outline"
 import Link from "next/link"
-import {useDispatch, useSelector} from 'react-redux'
-import {activateHamburger, deactivateHamburger} from '../reducers/actions'
+import { useDispatch, useSelector } from 'react-redux'
+import { activateHamburger, deactivateHamburger } from '../reducers/actions'
 
 function Menu() {
 
@@ -15,10 +15,10 @@ function Menu() {
 
     const dispatch = useDispatch()
 
-    function handleBurgerState(){
-        if(hamburgerState  == false){
-           dispatch( activateHamburger())
-        } else if(hamburgerState == true){
+    function handleBurgerState() {
+        if (hamburgerState == false) {
+            dispatch(activateHamburger())
+        } else if (hamburgerState == true) {
             dispatch(deactivateHamburger())
         }
     }
@@ -61,6 +61,8 @@ function Menu() {
                         <h1>Contact</h1>
                     </div>
                 </Link>
+                <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#1877f2] rounded-xl md:invisible xs:visible`}>Connect wallet</button>
+
             </>}
         </div>
     )

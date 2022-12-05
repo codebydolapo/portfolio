@@ -28,7 +28,7 @@ function Navbar(){
                 <h1 className = {`text-[white] md:text-3xl font-bold font-oswald xs:text-xl`}>CodeByDolapo.Com</h1>
             </div>
             <div className = {`w-1/2 h-full px-3 flex flex-row justify-end items-center`}>
-                <button className = {`w-[10rem] md:h-[2.5rem] md:text-base text-white mx-5 bg-[#1877f2] md:rounded-xl xs:rounded-lg xs:h-[1.7rem] xs:text-[0.7rem]`}>Connect wallet</button>
+                <button className = {`w-[10rem] md:h-[2.5rem] md:text-base text-white mx-5 bg-[#1877f2] md:rounded-xl md:visible xs:invisible xs:rounded-lg xs:h-[1.7rem] xs:text-[0.7rem]`}>Connect wallet</button>
                 <div className = {`${styles.hamburger}`} onClick = {handleBurgerState}>
                     <div className={`${styles.line}`} id = {`${hamburgerState && styles.line1}`}></div>
                     <div className={`${styles.middleLine}`} id = {`${hamburgerState && styles.line2}`}></div>

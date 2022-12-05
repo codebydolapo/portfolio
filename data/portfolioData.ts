@@ -18,7 +18,7 @@ export const portfolioData = [
         desc: "Hotel Rental App On The Matic Blockchain, With Web3 Functionality: Built with Solidity, Moralis, Tailwind and Hardhat",
         images: ['images/sequin/sequinRevamped.png','images/sequin/sequin.png', 'images/sequin/sequinRentals.png'],
         liveLink: '',
-        repoLink: ''
+        repoLink: 'https://github.com/codebydolapo/sequin/'
     },
     {
         title: 'FlipCard: Blockchain NFT Reward Game',
