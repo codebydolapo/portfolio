@@ -11,12 +11,12 @@ function Intro() {
                     <div className={`w-full h-full overflow-hidden `}>
                         <img className={`w-full h-auto`} alt='' src='/images/bg.jpeg' />
                     </div>
-                    <img className={`md:w-[15rem] md:h-[15rem] rounded-full mx-2 absolute md:bottom-[-5rem] md:border-[7px] border-white xs:w-[10rem] xs:h-[10rem] xs:bottom-[-1rem]`} alt='' src='/images/dp.png' />
+                    <img className={`md:w-[15rem] md:h-[15rem] rounded-full mx-2 absolute md:bottom-[-5rem] border-[7px] border-white xs:w-[10rem] xs:h-[10rem] xs:bottom-[-1rem]`} alt='' src='/images/dp.png' />
                 </div>
 
                 <div className={`w-full md:h-[40vh] flex flex-col items-center justify-center mt-[4rem] xs:min-h-[60vh]`}>
                     <div className={`md:w-[70%] min-h-[5rem] flex items-center justify-center`}>
-                        <h1 className={`md:text-6xl font-extrabold text-[#1877f2] xs:text-4xl text-center`}>Bashorun Dolapo</h1>
+                        <h1 className={`md:text-6xl font-extrabold text-[#1877f2] xs:text-3xl text-center`}>Bashorun Dolapo</h1>
                         <img className={`md:w-[5rem] xs:w-[3rem]`} alt='' src='/icons/verified.jpg' />
                     </div>
                     <h3 className={`md:text-xl font-bold my-[1rem] xs:text-lg `} >
