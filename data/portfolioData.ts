@@ -11,7 +11,7 @@ export const portfolioData = [
         desc: "Nft Marketplace. Shop, find a jpeg you like, own it",
         images: ['images/enefti/enefti1.png', 'images/enefti/enefti2.png', 'images/enefti/enefti3.png'],
         liveLink: '',
-        repoLink: ''
+        repoLink: 'https://github.com/codebydolapo/Enefti'
     },
     {
         title: 'Sequin: Blockchain Hotel App',
