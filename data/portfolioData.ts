@@ -4,7 +4,7 @@ export const portfolioData = [
         desc: "Crypto Exchange With Native Cryptocurrency",
         images: ['images/gelatoswap/gelatoswap2.png', 'images/gelatoswap/gelatoswap3.png', 'images/gelatoswap/gelatoswap.png'],
         liveLink: '',
-        repoLink: ''
+        repoLink: 'https://github.com/codebydolapo/GelatoSwap'
     },
     {
         title: 'Enefti: NFT Marketplace',
