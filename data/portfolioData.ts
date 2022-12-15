@@ -21,9 +21,9 @@ export const portfolioData = [
         repoLink: 'https://github.com/codebydolapo/sequin/'
     },
     {
-        title: 'FlipCard: Blockchain NFT Reward Game',
-        desc: "Memory Game That Rewards Players With NFTs When They Win",
-        images: ['images/flipcard/flipcard.png'],
+        title: 'Solaris: Space Tourism Venture',
+        desc: "A convenient and easy way to go to space",
+        images: ['images/solaris/solaris.png'],
         liveLink: '',
         repoLink: ''
     },
