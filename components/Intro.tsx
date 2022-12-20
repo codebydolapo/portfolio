@@ -6,7 +6,7 @@ function Intro() {
 
     return (
         <div className={`w-full md:min-h-[100vh] flex justify-center align-center xs:min-h-[50vh]`} id='home'>
-            <div className={`md:w-[95%] md:min-h-[70vh] xs:w-full xs:min-h-[100vh]`}>
+            <div className={`md:w-[100%] md:min-h-[70vh] xs:w-full xs:min-h-[100vh]`}>
                 <div className={`w-full md:h-[60vh] flex flex-col justify-center md:items-center relative xs:h-[30vh] xs:items-start`}>
                     <div className={`w-full h-full overflow-hidden `}>
                         <img className={`w-full h-auto`} alt='' src='/images/bg.jpeg' />
@@ -16,8 +16,8 @@ function Intro() {
 
                 <div className={`w-full md:h-[40vh] flex flex-col items-center justify-center mt-[4rem] xs:min-h-[60vh]`}>
                     <div className={`md:w-[70%] min-h-[5rem] flex items-center justify-center`}>
-                        <h1 className={`md:text-6xl font-cedarville font-extrabold text-[#1877f2] xs:text-3xl text-center`}>Bashorun Dolapo</h1>
-                        <img className={`md:w-[5rem] xs:w-[3rem]`} alt='' src='/icons/verified.jpg' />
+                        <h1 className={`md:text-[7rem] font-cedarville font-lighter text-[#1877f2] xs:text-7xl text-center`}>Bashorun Dolapo</h1>
+                        <img className={`md:w-[5rem] md:visible xs:invisible xs:w-[0rem]`} alt='' src='/icons/verified.jpg' />
                     </div>
                     <h3 className={`md:text-xl font-bold my-[1rem] xs:text-lg `} >
                         <Typewriter
