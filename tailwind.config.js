@@ -18,7 +18,7 @@ module.exports = {
         hubballi: ["hubballi", 'sans-serif'],
         opensans: ['Open Sans', 'Sans Serif'],
         oswald: ['Oswald', 'sans-serif'],
-        cedarville: ['Cedarville Cursive', "cursive";]
+        cedarville: ['Cedarville Cursive', "cursive"]
       }
     },
   },
