@@ -17,7 +17,8 @@ module.exports = {
         roboto: ["roboto", 'sans-serif'],
         hubballi: ["hubballi", 'sans-serif'],
         opensans: ['Open Sans', 'Sans Serif'],
-        oswald: ['Oswald', 'sans-serif']
+        oswald: ['Oswald', 'sans-serif'],
+        cedarville: ['Cedarville Cursive', "cursive";]
       }
     },
   },

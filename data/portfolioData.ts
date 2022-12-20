@@ -9,7 +9,7 @@ export const portfolioData = [
     {
         title: 'Solaris: Space Tourism Venture',
         desc: "A convenient and easy way to go to space",
-        images: ['images/solaris/solaris.png'],
+        images: ['images/solaris/solaris.png', 'images/solaris/solaris2.png'],
         liveLink: '',
         repoLink: ''
     },
