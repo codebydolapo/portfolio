@@ -1,6 +1,8 @@
 import styles from '../styles/intro.module.css'
 import { useEffect, useRef } from 'react'
 import Typewriter from 'typewriter-effect'
+import Link from 'next/link'
+
 
 function Intro() {
 
@@ -30,8 +32,13 @@ function Intro() {
                     </h3>
 
                     <div className={`md:my-[1rem]`}>
+                        <Link href = "/#portfolio">
                         <button className={`md:w-[13em] bg-[#1877f2] h-[2.5em] rounded-md text-white md:mx-[2rem] xs:w-[47vw] xs:mx-1`}>My Portfolio</button>
+                        </Link>
+                            
+                        <Link href = "https://drive.google.com/file/d/1ENwx15E2hzntxMTjfY17ohHE2pnfOj7h/view?usp=drivesdk" passHref = {true}>
                         <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[2rem] xs:w-[47vw] xs:mx-1`}>My Resume</button>
+                        </Link>
                     </div>
                 </div>
             </div>
