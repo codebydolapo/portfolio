@@ -18,7 +18,7 @@ function Intro() {
 
                 <div className={`w-full md:h-[40vh] flex flex-col items-center justify-center mt-[4rem] xs:min-h-[60vh]`}>
                     <div className={`md:w-[70%] min-h-[5rem] flex items-center justify-center`}>
-                        <h1 className={`md:text-[7rem] font-cedarville font-thin text-[#1877f2] xs:text-7xl text-center`}>Bashorun Dolapo</h1>
+                        <h1 className={`md:text-[7rem] font-cursive font-thin text-[#1877f2] xs:text-7xl text-center`}>Bashorun Dolapo</h1>
                         <img className={`md:w-[5rem] md:visible xs:invisible xs:w-[0rem]`} alt='' src='/icons/verified.jpg' />
                     </div>
                     <h3 className={`md:text-xl font-bold my-[1rem] xs:text-lg `} >
