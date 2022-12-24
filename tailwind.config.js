@@ -19,7 +19,7 @@ module.exports = {
         opensans: ['Open Sans', 'Sans Serif'],
         oswald: ['Oswald', 'sans-serif'],
         allura: ['Allura', "cursive"],
-        montserrat: ['montserrat', "sans-serif"]
+        montserrat: ['Montserrat', "sans-serif"]
       }
     },
   },
