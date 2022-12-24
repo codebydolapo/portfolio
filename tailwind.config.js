@@ -18,8 +18,8 @@ module.exports = {
         hubballi: ["hubballi", 'sans-serif'],
         opensans: ['Open Sans', 'Sans Serif'],
         oswald: ['Oswald', 'sans-serif'],
-        cedarville: ['Cedarville Cursive', "cursive"],
-        montserrat: ['Cedarville Cursive', "cursive"]
+        allura: ['Allura', "cursive"],
+        montserrat: ['montserrat', "sans-serif"]
       }
     },
   },
