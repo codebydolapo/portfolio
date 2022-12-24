@@ -15,7 +15,7 @@ function Portfolio() {
                 <AboutItem
                     icon={'smiley'}
                     header={'Quick Facts'}
-                    desc={"Hello There! I'm Dolapo. Frontend Web Developer, Blockchain Engineer and Technical Writer."}
+                    desc={"Hello There! I'm Dolapo. Frontend Web Developer, Web3 Engineer and Technical Writer."}
                 />
                 <AboutItem
                     icon={'hire'}
