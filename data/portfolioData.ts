@@ -7,11 +7,18 @@ export const portfolioData = [
         repoLink: 'https://github.com/codebydolapo/Enefti'
     },
     {
+        title: 'Purple: Web3 Store',
+        desc: "Buy yourself a pair of jeans and shows with ether",
+        images: ['images/purple/purple1.png', 'images/purple/purple2.png', 'images/purple/purple3.png', 'images/purple/purple4.png'],
+        liveLink: '',
+        repoLink: 'https://github.com/codebydolapo/Purple-Collections'
+    },
+    {
         title: 'Solaris: Space Tourism Venture',
         desc: "A convenient and easy way to go to space",
         images: ['images/solaris/solaris.png', 'images/solaris/solaris2.png'],
         liveLink: '',
-        repoLink: ''
+        repoLink: 'https://github.com/codebydolapo/Solaris'
     },
     {
         title: 'Sequin: Blockchain Hotel App',
