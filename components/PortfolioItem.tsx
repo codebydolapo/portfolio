@@ -74,11 +74,11 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
             </div>
             <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative xs:min-h-[50vw]`}>
                 {leftNavVisibility && 
-                <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer z-[10] ${styles.directionDiv}`}>
+                <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer z-[3] ${styles.directionDiv}`}>
                     <ChevronLeftIcon className={`${styles.direction}`} onClick={handlePicture} />
                 </div>}
                 <img className={`w-full h-auto rounded-lg hover:scale-[105%] ease-in-out duration-[500ms]`} src={images[pictureIndex]} alt='' />
-                {rightNavVisibility && <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] right-2 flex justify-center items-center cursor-pointer z-[10] ${styles.directionDiv}`}>
+                {rightNavVisibility && <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] right-2 flex justify-center items-center cursor-pointer z-[3] ${styles.directionDiv}`}>
                     <ChevronRightIcon className={`${styles.direction}`} onClick={handlePicture} />
                 </div>}
             </div>
