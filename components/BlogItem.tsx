@@ -13,7 +13,7 @@ function BlogItem({ image, title, desc, link }: { image: string, title: string, 
                     <img className={`h-auto w-full rounded-xl hover:scale-[105%] ease-in-out duration-[500ms]`} alt='' src={image} />
                 </div>
             </Link>
-            <div className={`w-full min-h-[5rem] overflow-hidden md:pl-0 xs:pl-2 `}>
+            <div className={`w-full min-h-[6rem] overflow-hidden md:pl-0 flex justify-center items-center`}>
                 <p className={`md:text-[1rem] font-[500] xs:text-xs tracking-widest`}>{desc}</p>
             </div>
         </div>
