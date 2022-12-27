@@ -1,7 +1,7 @@
 export const portfolioData = [
     {
         title: 'Enefti: NFT Marketplace',
-        desc: "Nft Marketplace. Shop, find a jpeg you like, own it",
+        desc: "Nft Marketplace: Shop, find a jpeg you like, own it",
         images: ['images/enefti/enefti1.png', 'images/enefti/enefti2.png', 'images/enefti/enefti3.png', 'images/enefti/enefti4.png'],
         liveLink: '',
         repoLink: 'https://github.com/codebydolapo/Enefti'

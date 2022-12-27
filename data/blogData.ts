@@ -3,7 +3,7 @@ export const blogData = [
         title: "Into the Ethereum And Web3 Rabbithole",
         image: "images/blog/blockchainWhatAre.jpg",
         link: "https://codedbydolapo.hashnode.dev/into-the-ethereum-and-web3-rabbit-hole",
-        desc: "I started learning Solidity only a few days ago, so I'm only still a baby developer.Here I am, however, sleep-deprived on a Thursday evening, trying my hand at blogging as a develo..."
+        desc: "I started learning Solidity only a few days ago, so I'm only still a baby developer. Here I am, however, sleep-deprived on a Thursday evening, trying my hand at blogging as a develo..."
     },
     {
         title: "Any moron can make crypto",
