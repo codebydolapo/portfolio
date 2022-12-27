@@ -8,7 +8,7 @@ export const portfolioData = [
     },
     {
         title: 'Purple: Web3 Store',
-        desc: "Buy yourself a pair of jeans and shows with ether",
+        desc: "Buy yourself a pair of jeans and headphones with ether",
         images: ['images/purple/purple1.png', 'images/purple/purple2.png', 'images/purple/purple3.png', 'images/purple/purple4.png'],
         liveLink: '',
         repoLink: 'https://github.com/codebydolapo/Purple-Collections'
