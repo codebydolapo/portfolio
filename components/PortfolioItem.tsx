@@ -68,7 +68,7 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
                     <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/dpx.png' alt='' />
                     <h1 className={`font-extrabold md:text-xl capitalize xs:text-sm`}>{title}</h1>
                 </div>
-                <div className={`w-full h-[5rem] text-[1rem] md:pl-3 pt-3 flex justify-start items-start `}>
+                <div className={`w-full h-[4rem] text-[1rem] md:pl-3 pt-3 flex justify-start items-start `}>
                     <p className={`md:text-base font-[500] `}>{desc}</p>
                 </div> 
             </div>

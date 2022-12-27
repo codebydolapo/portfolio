@@ -22,7 +22,7 @@ export const portfolioData = [
     },
     {
         title: 'Sequin: Blockchain Hotel App',
-        desc: "Hotel Rental App On The Matic Blockchain: Built with Solidity, Ethers, Tailwind and Hardhat",
+        desc: "Hotel Rental App On The Matic Blockchain",
         images: ['images/sequin/sequinRevamped.png','images/sequin/sequin.png', 'images/sequin/sequinRentals.png'],
         liveLink: '',
         repoLink: 'https://github.com/codebydolapo/sequin/'
