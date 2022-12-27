@@ -1,17 +1,20 @@
 import styles from '../styles/blogitem.module.css'
+import Link from 'next/link'
 
 
-function BlogItem({image, title, desc}: {image: string, title: string, desc: string}){
-    return(
-        <div className = {`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-3 xs:w-[98vw] ${styles.blogitem}`}>
-            <div className = {`w-full h-[3rem] flex justify-start items-center pl-2`}>
-                <h1 className={`font-bold font-oswald text-lg`}>{title}</h1>
+function BlogItem({ image, title, desc, link }: { image: string, title: string, desc: string, link: string }) {
+    return (
+        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-[2rem] xs:w-[98vw] relative ${styles.blogitem}`}>
+            <div className={`w-full min-h-[4rem] flex justify-start items-start pl-2`}>
+                <h1 className={`font-extrabold md:text-xl uppercase xs:text-sm`}>{title}</h1>
             </div>
-            <div className = {`w-full md:min-h-[20rem] h-auto flex justify-center relative rounded-xl mb-2 overflow-hidden object-contain xs:min-h-[50vw]`}>
-                <img className={`h-auto w-full rounded-xl`} alt = '' src= {image}/>
-            </div>
-            <div className = {`w-full h-[5rem] overflow-hidden md:pl-0 xs:pl-2`}>
-                <p className = {`md:text-sm xs:text-xs`}>{desc}</p>
+            <Link href={link} passHref= {true}>
+                <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative rounded-xl mb-2 overflow-hidden object-contain xs:min-h-[50vw]`}>
+                    <img className={`h-auto w-full rounded-xl hover:scale-[105%] ease-in-out duration-[500ms]`} alt='' src={image} />
+                </div>
+            </Link>
+            <div className={`w-full min-h-[5rem] overflow-hidden md:pl-0 xs:pl-2 `}>
+                <p className={`md:text-[1rem] font-[500] xs:text-xs tracking-widest`}>{desc}</p>
             </div>
         </div>
     )

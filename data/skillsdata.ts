@@ -28,6 +28,10 @@ export const skillsData = [
         title: 'Hardhat'
     }, 
     {
+        icon: '/icons/skills/ethersIcon.png',
+        title: 'Ethers'
+    }, 
+    {
         icon: '/icons/skills/tailwindIcon.png',
         title: 'Tailwind'
     }, 
