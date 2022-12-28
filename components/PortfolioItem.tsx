@@ -62,14 +62,14 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
 
 
     return (
-        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:mb-[5rem] rounded-lg xs:w-[99vw] xs:mb-[3rem]`}>
+        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:mb-[5rem] rounded-lg xs:w-[99vw] xs:mb-[3rem] border-b-2 border-[#00000057]`}>
             <div className={` rounded-lg mb-2`}>
                 <div className={`w-full h-[3rem] flex flex-row justify-start items-center md:pl-3 xs:pl-1`}>
                     <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/dpx.png' alt='' />
-                    <h1 className={`font-extrabold md:text-xl capitalize xs:text-sm`}>{title}</h1>
+                    <h1 className={`font-extrabold md:text-xl capitalize xs:text-lg`}>{title}</h1>
                 </div>
                 <div className={`w-full h-[4rem] text-[1rem] md:pl-3 pt-3 flex justify-start items-start `}>
-                    <p className={`md:text-base font-[500] `}>{desc}</p>
+                    <p className={`md:text-base font-[500] font-opensans tracking-wide`}>{desc}</p>
                 </div> 
             </div>
             <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative xs:min-h-[50vw]`}>

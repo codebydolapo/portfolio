@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function BlogItem({ image, title, desc, link }: { image: string, title: string, desc: string, link: string }) {
     return (
-        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-[2rem] xs:w-[98vw] relative ${styles.blogitem}`}>
+        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-[2rem] xs:w-[98vw] relative border-b-2 border-[#00000057] ${styles.blogitem}`}>
             <div className={`w-full min-h-[4rem] flex justify-start items-start pl-2`}>
                 <h1 className={`font-extrabold md:text-2xl capitalize xs:text-lg`}>{title}</h1>
             </div>
@@ -14,7 +14,7 @@ function BlogItem({ image, title, desc, link }: { image: string, title: string, 
                 </div>
             </Link>
             <div className={`w-full min-h-[6rem] overflow-hidden md:px-0 flex justify-center items-center px-1`}>
-                <p className={`md:text-lg font-[500] xs:text-xs tracking-wide font-opensans`}>{desc}</p>
+                <p className={`md:text-lg font-[500] tracking-wide font-opensans`}>{desc}</p>
             </div>
         </div>
     )
