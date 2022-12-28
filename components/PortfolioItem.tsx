@@ -1,7 +1,10 @@
 import styles from '../styles/portfolioitem.module.css'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 
 interface Props {
     title: string,
@@ -12,6 +15,10 @@ interface Props {
 }
 
 function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
+
+    useEffect(()=>{
+        Aos.init({duration: 1500})
+    }, [])
 
 
     const [pictureIndex, setPictureIndex] = useState(0)
@@ -62,7 +69,7 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
 
 
     return (
-        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:mb-[5rem] rounded-lg xs:w-[99vw] xs:mb-[3rem] border-b-2 border-[#00000057]`}>
+        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:mb-[5rem] rounded-lg xs:w-[99vw] xs:mb-[3rem] border-b-2 border-[#00000057]`} data-aos = "flip-left">
             <div className={` rounded-lg mb-2`}>
                 <div className={`w-full h-[3rem] flex flex-row justify-start items-center md:pl-3 xs:pl-1`}>
                     <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/dpx.png' alt='' />

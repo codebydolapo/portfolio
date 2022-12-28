@@ -3,6 +3,7 @@ import BlogItem from "./BlogItem"
 import { blogData } from "../data/blogData"
 import { maxHeaderSize } from "http"
 
+
 function Blog() {
     return (
         // <div className={`w-full min-h-[100vh] mt-[50px] h-auto flex justify-center align-center`} id='blog'>

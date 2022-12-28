@@ -2,7 +2,11 @@ import PortfolioItem from "./PortfolioItem"
 import styles from '../styles/portfolio.module.css'
 import { portfolioData } from "../data/portfolioData"
 
+
 function Portfolio(){
+
+   
+
     return(
         // <div className = {`w-full min-h-[100vh] h-auto flex justify-center align-center`}  id = 'portfolio'>
             <div className = {`w-full min-h-[100vh]`} id = 'portfolio'>
@@ -18,6 +22,7 @@ function Portfolio(){
                             repoLink = {repoLink}
                             images= {images}
                             key= {title}
+                            
                         />
                     })}
                 </div>

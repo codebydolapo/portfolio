@@ -1,10 +1,18 @@
 import styles from '../styles/blogitem.module.css'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 
 
 function BlogItem({ image, title, desc, link }: { image: string, title: string, desc: string, link: string }) {
+    useEffect(()=>{
+        Aos.init({duration: 1500})
+    }, [])
+
     return (
-        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-[2rem] xs:w-[98vw] relative border-b-2 border-[#00000057] ${styles.blogitem}`}>
+        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-[2rem] xs:w-[98vw] relative border-b-2 border-[#00000057] ${styles.blogitem}`} data-aos = "flip-left">
             <div className={`w-full min-h-[4rem] flex justify-start items-start pl-2`}>
                 <h1 className={`font-extrabold md:text-2xl capitalize xs:text-lg`}>{title}</h1>
             </div>

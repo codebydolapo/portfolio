@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "aos": "^2.3.4",
     "ethers": "^5.7.2",
     "ityped": "^1.0.3",
     "next": "12.2.4",
@@ -21,6 +22,7 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/ityped": "^1.0.1",
     "@types/node": "18.6.4",
     "@types/react": "18.0.15",
