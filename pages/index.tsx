@@ -7,7 +7,7 @@ import { title } from 'process'
 
 const Home: NextPage = () => {
   return (
-    <div className={`${styles.main} font-opensans text-[#4b4f56]`}>
+    <div className={`${styles.main} font-montserrat text-[#4b4f56]`}>
       <Head>
         <title>codebydolapo</title>
         <meta name="description" content="codebydolapo" />

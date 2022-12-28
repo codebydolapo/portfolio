@@ -6,7 +6,7 @@ function BlogItem({ image, title, desc, link }: { image: string, title: string, 
     return (
         <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col rounded-lg my-[2rem] xs:w-[98vw] relative ${styles.blogitem}`}>
             <div className={`w-full min-h-[4rem] flex justify-start items-start pl-2`}>
-                <h1 className={`font-extrabold md:text-xl capitalize xs:text-lg`}>{title}</h1>
+                <h1 className={`font-extrabold md:text-2xl capitalize xs:text-lg`}>{title}</h1>
             </div>
             <Link href={link} passHref= {true}>
                 <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative rounded-xl mb-2 overflow-hidden object-contain xs:min-h-[50vw]`}>
@@ -14,7 +14,7 @@ function BlogItem({ image, title, desc, link }: { image: string, title: string, 
                 </div>
             </Link>
             <div className={`w-full min-h-[6rem] overflow-hidden md:px-0 flex justify-center items-center px-1`}>
-                <p className={`md:text-[1rem] font-[500] xs:text-xs tracking-widest`}>{desc}</p>
+                <p className={`md:text-lg font-[500] xs:text-xs tracking-wide font-opensans`}>{desc}</p>
             </div>
         </div>
     )
