@@ -20,7 +20,7 @@ function Navbar(){
         }
     }
 
-    //
+    
     return(
         <div className = {`w-full h-[50px] bg-[#0b4572] flex flex-row fixed z-[5]`}>
             <div className = {`w-1/2 h-full px-2 flex flex-row justify-start items-center`}>

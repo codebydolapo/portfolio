@@ -19,3 +19,5 @@ It is the git repository of my personal portfolio website, and has been in a con
 It is built using Next-JS, TypeScript and Tailwind, among other frameworks and technologies.
 
 Reach me on [LinkedIn](https://www.linkedin.com/in/dolapo-bashorun-8b5164225/) or on [Twitter](https://twitter.com/the_transistorr)
+
+0x259AA02E330AD7684945aC8A6BC66b9FfE4d6A6F
