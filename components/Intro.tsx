@@ -33,11 +33,11 @@ function Intro() {
 
                     <div className={`md:my-[1rem]`}>
                         <Link href = "/#portfolio">
-                        <button className={`md:w-[13em] bg-[#1877f2] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Portfolio</button>
+                        <button className={`md:w-[13em] bg-[#1877f2] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button>
                         </Link>
                             
                         <Link href = "https://drive.google.com/file/d/1ENwx15E2hzntxMTjfY17ohHE2pnfOj7h/view?usp=drivesdk" passHref = {true}>
-                        <button className={`md:w-[13em] border-2 border-[#1877f2] h-[2.5em] rounded-md text-[#4b4f56] md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button>
+                        <button className={`md:w-[13em] border-2 border-[#1877f2] h-[2.5em] rounded-md text-[#4b4f56] font-bold md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Resume</button>
                         {/* <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button> */}
                         </Link>
                     </div>

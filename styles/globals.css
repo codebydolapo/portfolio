@@ -17,3 +17,7 @@ body {
   transition: all ease 500ms;
   font-family: "montserrat"
 }
+
+*::-webkit-scrollbar{
+  display: none
+}

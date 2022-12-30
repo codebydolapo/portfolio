@@ -73,7 +73,7 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
             <div className={` rounded-lg mb-2`}>
                 <div className={`w-full h-[3rem] flex flex-row justify-start items-center md:pl-3 xs:pl-1`}>
                     <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/dpx.png' alt='' />
-                    <h1 className={`font-extrabold md:text-xl capitalize xs:text-lg`}>{title}</h1>
+                    <h1 className={`font-extrabold md:text-xl capitalize xs:text-lg text-[#1877f2]`}>{title}</h1>
                 </div>
                 <div className={`w-full h-[2rem] text-[1rem] md:pl-3 pt-3 flex justify-start items-start overflow-hidden `}>
                     <p className={`md:text-base font-[300] font-opensans tracking-wide xs:text-sm`}>{desc}</p>
@@ -95,7 +95,7 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
                     <button className={`w-[42%] md:h-[2.5rem] bg-[#1877f2] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
                 </Link>
                 <Link href={repoLink} passHref={true}>
-                    <button className={`min-w-[42%] md:h-[2.5rem] border-2 border-[#1877f2] rounded-md md:text-base text-[#4b4f56] mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
+                    <button className={`min-w-[42%] md:h-[2.5rem] border-2 border-[#1877f2] font-bold rounded-md md:text-base text-[#4b4f56] mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
                 </Link>
             </div>
         </div>
