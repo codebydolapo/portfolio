@@ -22,6 +22,7 @@ function Blog() {
                     />
                     })}
                 </div>
+                <hr/>
             </div>
         // </div>
     )
