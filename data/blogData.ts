@@ -15,6 +15,6 @@ export const blogData = [
         title: "What is Proof Of Work?",
         image: "images/blog/crunch3.jpg",
         link: "https://www.linkedin.com/pulse/03creating-my-own-pow-blockchain-what-proof-work-dolapo-bashorun/",
-        desc: "I added in a 'proof of work' method that uses this hashing function to scramble the hash of the last block in the blockchain + the data from the current unmined block + a nonce..."
+        desc: "I added in a 'proof of work' method that uses the SHA256 hashing function to scramble the hash of the last block in the blockchain + the data from the current unmined block + a nonce..."
     },
 ]
