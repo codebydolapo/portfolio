@@ -95,7 +95,7 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
                     <button className={`w-[42%] md:h-[2.5rem] bg-[#1877f2] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
                 </Link>
                 <Link href={repoLink} passHref={true}>
-                    <button className={`min-w-[42%] md:h-[2.5rem] bg-[#4b4f56] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
+                    <button className={`min-w-[42%] md:h-[2.5rem] border-2 border-[#1877f2] rounded-md md:text-base text-[#4b4f56] mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
                 </Link>
             </div>
         </div>

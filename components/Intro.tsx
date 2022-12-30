@@ -37,7 +37,8 @@ function Intro() {
                         </Link>
                             
                         <Link href = "https://drive.google.com/file/d/1ENwx15E2hzntxMTjfY17ohHE2pnfOj7h/view?usp=drivesdk" passHref = {true}>
-                        <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button>
+                        <button className={`md:w-[13em] border-2 border-[#1877f2] h-[2.5em] rounded-md text-[#4b4f56] md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button>
+                        {/* <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button> */}
                         </Link>
                     </div>
                 </div>

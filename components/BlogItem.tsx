@@ -8,7 +8,7 @@ import "aos/dist/aos.css"
 
 function BlogItem({ image, title, desc, link }: { image: string, title: string, desc: string, link: string }) {
     useEffect(()=>{
-        Aos.init({duration: 2000})
+        Aos.init({duration: 1500})
     }, [])
 
     return (

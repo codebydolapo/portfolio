@@ -22,7 +22,7 @@ function AboutItem({ icon, header, desc }: {icon: string, header: string, desc: 
                 }
             </div>
             <div className={`w-[90%] h-full px-5 flex flex-col items-start justify-center`}>
-                <h1 className={`md:text-4xl font-extrabold my-2 xs:text-xl`}>{header}</h1>
+                <h1 className={`md:text-4xl font-extrabold my-2 xs:text-xl text-[#0078ff]`}>{header}</h1>
                 <h3 className={`md:text-lg xs:text-sm`}>{desc}</h3>
             </div>
         </div>

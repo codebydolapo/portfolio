@@ -8,10 +8,11 @@ function Portfolio() {
             <div className={`w-full h-[5rem] flex flex-row items-center justify-between px-[0.5rem] border-b-2 border-grey md:pl-10 xs:pl-2`}>
                 <h1 className={`md:text-4xl font-extrabold xs:text-3xl text-[#0078ff]`}>About Me</h1>
             </div>
-            {/* <div className = {`w-full text-xl pl-10 mb-2`}>
-                    A  few things about me you might find interesting or useful...
+            
+            {/* <div className={`w-full h-[50vh] flex flex-wrap flex-row items-center justify-center my-[2rem] border-2 border-black`}>
+                <div className = {`w-[23%] h-[95%] border-2 border-black`}></div>
             </div> */}
-            <div className={`w-full h-[90%] flex flex-wrap flex-row items-center justify-center ${styles.aboutContainer}`}>
+            <div className={`w-full h-[90vh] flex flex-wrap flex-row items-center justify-center ${styles.aboutContainer}`}>
                 <AboutItem
                     icon={'smiley'}
                     header={'Quick Facts'}
