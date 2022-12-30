@@ -69,14 +69,14 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
 
 
     return (
-        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:mb-[5rem] rounded-lg xs:w-[99vw] xs:mb-[3rem] md:border-y-0 xs:border-y-2 border-[#00000057]`} data-aos = "flip-left">
+        <div className={`min-h-[35vw] h-auto md:w-[48vw] flex flex-col md:mb-[5rem] rounded-lg xs:w-[97vw] xs:mb-[3rem]`} data-aos = "flip-left">
             <div className={` rounded-lg mb-2`}>
                 <div className={`w-full h-[3rem] flex flex-row justify-start items-center md:pl-3 xs:pl-1`}>
                     <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/dpx.png' alt='' />
                     <h1 className={`font-extrabold md:text-xl capitalize xs:text-lg`}>{title}</h1>
                 </div>
-                <div className={`w-full h-[4rem] text-[1rem] md:pl-3 pt-3 flex justify-start items-start `}>
-                    <p className={`md:text-base font-[500] font-opensans tracking-wide`}>{desc}</p>
+                <div className={`w-full h-[2rem] text-[1rem] md:pl-3 pt-3 flex justify-start items-start overflow-hidden `}>
+                    <p className={`md:text-base font-[300] font-opensans tracking-wide xs:text-sm`}>{desc}</p>
                 </div> 
             </div>
             <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative xs:min-h-[50vw]`}>
@@ -91,10 +91,10 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
             </div>
             
             <div className={`w-full md:h-[3.5rem] flex justify-start items-center xs:h-[2.5rem]`}>
-                <Link href={liveLink} className={`w-auto h-auto`}>
+                <Link href={liveLink}>
                     <button className={`w-[42%] md:h-[2.5rem] bg-[#1877f2] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
                 </Link>
-                <Link href={repoLink} className={`w-auto h-auto`}>
+                <Link href={repoLink} passHref={true}>
                     <button className={`min-w-[42%] md:h-[2.5rem] bg-[#4b4f56] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
                 </Link>
             </div>
