@@ -29,7 +29,7 @@ function Portfolio() {
                     <img className={`rounded-full h-[48%] w-auto`} alt={``} src={`/images/work.png`} />
                     <div className={`h-[48%] w-full flex flex-col justify-around items-center`}>
                         <h1 className={`text-xl font-bold text-[#1877f2]`}>Why Hire Me?</h1>
-                        <p className={`text-center px-2`}>I am a committed, highly motivated individual with an undying passion for learning</p>
+                        <p className={`text-center px-2`}>I am a committed, highly motivated individual with an undying passion for learning.</p>
                     </div>
                 </div>
                 <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[90vw] xs:min-h-[90vw] xs:w-[90vw] xs:h-[90vw] xs:mx-2 `} data-aos = "flip-right">
