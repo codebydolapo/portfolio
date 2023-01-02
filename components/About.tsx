@@ -18,28 +18,28 @@ function Portfolio() {
             </div>
 
             <div className={`w-full h-[50vh] flex flex-row items-center md:justify-around md:overflow-x-hidden my-[2rem] xs:overflow-x-scroll`}>
-                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[90vw] xs:min-h-[90vw] xs:w-[90vw] xs:h-[90vw] xs:mx-2`} data-aos = "flip-right">
+                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[85vw] xs:min-h-[90vw] xs:w-[85vw] xs:h-[90vw] xs:mx-2`} data-aos = "flip-right">
                     <img className={`rounded-full h-[48%] w-auto`} alt={``} src={`/images/dpx.png`} />
                     <div className={`h-[48%] w-full flex flex-col justify-around items-center`}>
                         <h1 className={`text-xl font-bold text-[#1877f2]`}>About Me</h1>
                         <p className={`text-center px-2`}>Hello There! My name is Dolapo. Frontend Web Developer, Web3 Engineer and Technical Writer.</p>
                     </div>
                 </div>
-                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[90vw] xs:min-h-[90vw] xs:w-[90vw] xs:h-[90vw] xs:mx-2`} data-aos = "flip-right">
+                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[85vw] xs:min-h-[90vw] xs:w-[85vw] xs:h-[90vw] xs:mx-2`} data-aos = "flip-right">
                     <img className={`rounded-full h-[48%] w-auto`} alt={``} src={`/images/work.png`} />
                     <div className={`h-[48%] w-full flex flex-col justify-around items-center`}>
                         <h1 className={`text-xl font-bold text-[#1877f2]`}>Why Hire Me?</h1>
                         <p className={`text-center px-2`}>I am a committed, highly motivated individual with an undying passion for learning.</p>
                     </div>
                 </div>
-                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[90vw] xs:min-h-[90vw] xs:w-[90vw] xs:h-[90vw] xs:mx-2 `} data-aos = "flip-right">
+                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[85vw] xs:min-h-[90vw] xs:w-[85vw] xs:h-[90vw] xs:mx-2 `} data-aos = "flip-right">
                     <img className={`rounded-full h-[48%] w-auto`} alt={``} src={`/images/education.png`} />
                     <div className={`h-[48%] w-full flex flex-col justify-around items-center`}>
                         <h1 className={`text-xl font-bold text-[#1877f2]`}>Education</h1>
                         <p className={`text-center px-2`}>BSc (Electrical Engineering): Federal University Of Agriculture, Abeokuta, Ogun State, Nigeria</p>
                     </div>
                 </div>
-                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[90vw] xs:min-h-[90vw] xs:w-[90vw] xs:h-[90vw] xs:mx-2`} data-aos = "flip-right">
+                <div className={`md:w-[23%] md:h-[95%] md:min-w-[23%] md:min-h-[95%] md:mx-0 rounded-xl flex flex-col items-center justify-around  border-2 border-grey hover:scale-[105%] duration-[500ms] xs:min-w-[85vw] xs:min-h-[90vw] xs:w-[85vw] xs:h-[90vw] xs:mx-2`} data-aos = "flip-right">
                     <img className={`rounded-full h-[48%] w-auto`} alt={``} src={`/images/experience.png`} />
                     <div className={`h-[48%] w-full flex flex-col justify-around items-center`}>
                         <h1 className={`text-xl font-bold text-[#1877f2]`}>My Skills</h1>
