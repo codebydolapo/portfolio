@@ -1,5 +1,5 @@
-import AboutItem from "./AboutItem"
-import styles from '../styles/about.module.css'
+// import AboutItem from "./AboutItem"
+// import styles from '../styles/about.module.css'
 import { useEffect } from "react"
 import Aos from "aos"
 import "aos/dist/aos.css"
