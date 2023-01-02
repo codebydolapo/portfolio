@@ -22,7 +22,7 @@ function BlogItem({ image, title, desc, link }: { image: string, title: string, 
                 </div>
             </Link>
             <div className={`w-full h-[3.5rem] overflow-hidden md:px-0 px-1 `}>
-                <p className={`md:text-lg xs:text-sm font-[300] tracking-wide font-opensans`}>{desc}</p>
+                <p className={`md:text-lg xs:text-sm font-[400] tracking-wide font-opensans`}>{desc}</p>
             </div>
         </div>
     )

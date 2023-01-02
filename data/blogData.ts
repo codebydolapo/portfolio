@@ -17,4 +17,10 @@ export const blogData = [
         link: "https://www.linkedin.com/pulse/03creating-my-own-pow-blockchain-what-proof-work-dolapo-bashorun/",
         desc: "I added in a 'proof of work' method that uses the SHA256 hashing function to scramble the hash of the last block in the blockchain + the data from the current unmined block + a nonce..."
     },
+    {
+        title: "The Genesis Block",
+        image: "images/blog/crunch4.jpg",
+        link: "https://www.linkedin.com/pulse/03creating-my-own-pow-blockchain-genesis-block-dolapo-bashorun/?trackingId=1grY8MxuQwa2h5p2UtBr%2BA%3D%3D",
+        desc: "In case you are unfamiliar with what genesis blocks are, you should know that blockchains are a long string of interconnected, cryptographically hashed blocks. This means that..."
+    },
 ]
