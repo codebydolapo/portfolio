@@ -73,13 +73,13 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
             <div className={` rounded-lg mb-2`}>
                 <div className={`w-full h-[3rem] flex flex-row justify-start items-center md:pl-3 xs:pl-1`}>
                     <img className={`w-[40px] h-[40px] rounded-full mr-3`} src='/images/dpx.png' alt='' />
-                    <h1 className={`font-extrabold md:text-xl capitalize xs:text-lg text-[#1877f2]`}>{title}</h1>
+                    <h1 className={`font-extrabold md:text-xl capitalize xs:text-lg text-[#11abc1]`}>{title}</h1>
                 </div>
-                <div className={`w-full h-[2rem] text-[1rem] md:pl-3 pt-3 flex justify-start items-start overflow-hidden `}>
+                <div className={`w-full h-[2rem] text-[1rem] md:pl-3 flex justify-start items-center overflow-hidden `}>
                     <p className={`md:text-base font-[300] font-opensans tracking-wide xs:text-sm`}>{desc}</p>
                 </div> 
             </div>
-            <div className={`w-full md:min-h-[20rem] h-auto flex justify-center relative xs:min-h-[50vw]`}>
+            <div className={`w-full md:min-h-[20rem] overflow-hidden h-auto flex justify-center relative xs:min-h-[50vw]`}>
                 {leftNavVisibility && 
                 <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer z-[3] ${styles.directionDiv}`}>
                     <ChevronLeftIcon className={`${styles.direction}`} onClick={handlePicture} />
@@ -92,10 +92,10 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
             
             <div className={`w-full md:h-[3.5rem] flex justify-start items-center xs:h-[2.5rem]`}>
                 <Link href={liveLink} passHref = {true}>
-                    <button className={`w-[42%] md:h-[2.5rem] bg-[#1877f2] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
+                    <button className={`w-[42%] md:h-[2.5rem] bg-[#FFBF00] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
                 </Link>
                 <Link href={repoLink} passHref={true}>
-                    <button className={`min-w-[42%] md:h-[2.5rem] border-2 border-[#1877f2] font-bold rounded-md md:text-base text-[#4b4f56] mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
+                    <button className={`min-w-[42%] md:h-[2.5rem] border-[1px] border-[#0000006b] font-bold rounded-md md:text-base text-[#11abc1] mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
                 </Link>
             </div>
         </div>
