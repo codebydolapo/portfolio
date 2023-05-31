@@ -61,7 +61,7 @@ function Menu() {
                         <h1>Contact</h1>
                     </div>
                 </Link>
-                <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#1877f2] rounded-xl md:invisible xs:visible`}>Connect wallet</button>
+                <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#FFBF00] rounded-xl md:invisible xs:visible`}>Connect wallet</button>
 
             </>}
         </div>

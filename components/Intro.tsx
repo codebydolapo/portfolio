@@ -21,7 +21,7 @@ function Intro() {
                         <h1 className={`md:text-[7rem] font-allura font-thin text-[#000] xs:text-7xl text-center`}>Bashorun Dolapo</h1>
                         <img className={`md:w-[5rem] md:visible xs:invisible xs:w-[0rem]`} alt='' src='/icons/verified.jpg' />
                     </div>
-                    <h3 className={`md:text-xl font-normal my-[1rem] xs:text-lg text-[#00000080]`} >
+                    <h3 className={`md:text-xl font-normal my-[1rem] xs:text-lg text-[#00000080] text-center`} >
                         <Typewriter
                             options={{
                                 strings: ["Web Developer", "Web3 Jedi", "I/O Enthusiast", "Technical Writer"],
@@ -30,6 +30,7 @@ function Intro() {
                             }}
                         />
                     </h3>
+                    <p className={`md:text-xl font-normal my-[1rem] xs:text-lg text-[#000000] text-center`}>Pleased to have you here! I build and write about cool stuff, and you should check out...</p>
 
                     <div className={`md:my-[1rem]`}>
                         <Link href = "/#portfolio">
