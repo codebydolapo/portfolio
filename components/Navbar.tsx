@@ -5,14 +5,13 @@ import { activateHamburger, deactivateHamburger } from '../reducers/actions'
 import { useState, useEffect } from "react"
 // import Window from './window'
 import shortenAddress from '../utils/shortenAddress'
+import { addConnectedAddress, removeConnectedAddress } from "../reducers/actions"
 
-interface HamburgerState {
-    hamburgerState: boolean
-}
 
 function Navbar() {
 
     const hamburgerState = useSelector((state: HamburgerState) => state.hamburgerState)
+    const _storedAddress = useSelector((state: ConnectedAddress) => state.connectedAddress)
 
     const dispatch = useDispatch()
 
@@ -80,7 +79,10 @@ function Navbar() {
         // MetaMask requires requesting permission to connect users accounts
         provider.send("eth_requestAccounts", [])
             .then((accounts) => {
-                if (accounts.length > 0) setCurrentAccount(accounts[0])
+                if (accounts.length > 0) {
+                    setCurrentAccount(accounts[0])
+                    dispatch(addConnectedAddress(accounts[0]))
+                }
             })
             .catch((e) => console.log(e))
     }
@@ -90,11 +92,11 @@ function Navbar() {
         setBalance(undefined)
         setCurrentAccount(undefined)
         setConnectedStatus(false)
+        dispatch(removeConnectedAddress())
     }
 
     function handleConnection() {
         if (!connectedStatus) {
-            alert("hello")
             connect()
         }
         else {
@@ -129,8 +131,8 @@ function Navbar() {
                     <h1 className={`text-[black] md:text-3xl font-bold font-oswald xs:text-xl`}>CodeByDolapo.Com</h1>
                 </div>
                 <div className={`w-1/2 h-full px-3 flex flex-row justify-end items-center`}>
-                    {currentAccount ?
-                        <button className={`w-[10rem] md:h-[2.5rem] md:text-base text-white mx-5 bg-[#FFBF00] md:rounded-xl md:visible xs:invisible xs:rounded-lg xs:h-[1.7rem] xs:text-[0.7rem]`} onClick={handleConnection}>{shortenAddress(currentAccount)}</button> :
+                    {_storedAddress ?
+                        <button className={`w-[10rem] md:h-[2.5rem] md:text-base text-white mx-5 bg-[#FFBF00] md:rounded-xl md:visible xs:invisible xs:rounded-lg xs:h-[1.7rem] xs:text-[0.7rem]`} onClick={handleConnection}>{shortenAddress(_storedAddress)}</button> :
                         <button className={`w-[10rem] md:h-[2.5rem] md:text-base text-white mx-5 bg-[#FFBF00] md:rounded-xl md:visible xs:invisible xs:rounded-lg xs:h-[1.7rem] xs:text-[0.7rem]`} onClick={handleConnection}>Connect Wallet</button>}
                     <div className={`${styles.hamburger}`} onClick={handleBurgerState}>
                         <div className={`${styles.lineInactive}`} id={`${hamburgerState && styles.line1}`}></div>

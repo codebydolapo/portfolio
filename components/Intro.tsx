@@ -30,14 +30,14 @@ function Intro() {
                             }}
                         />
                     </h3>
-                    <p className={`md:text-xl font-normal my-[1rem] xs:text-lg text-[#000000] text-center`}>Pleased to have you here! I build and write about cool stuff, and you should check out...</p>
+                    <p className={`md:text-xl font-normal my-[1rem] xs:text-base text-[#000000] text-center`}>Pleased to have you here! I build and write about cool stuff, and you should check out...</p>
 
                     <div className={`md:my-[1rem]`}>
                         <Link href = "/#portfolio">
                         <button className={`md:w-[13em] bg-[#FFBF00] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button>
                         </Link>
                             
-                        <Link href = "https://drive.google.com/file/d/1ENwx15E2hzntxMTjfY17ohHE2pnfOj7h/view?usp=drivesdk" passHref = {true}>
+                        <Link href = "https://drive.google.com/file/d/17jTzZbYXJLK1zRzaA6ohbg8hVSHWfaWR/view?usp=drivesdk" passHref = {true}>
                         <button className={`md:w-[13em] border-[2px] border-[black] bg-[#66d47e02] h-[2.5em] rounded-md text-[#000] font-bold md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Resume</button>
                         {/* <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button> */}
                         </Link>

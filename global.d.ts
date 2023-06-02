@@ -7,4 +7,12 @@ declare global {
     ethereum: any;
     // ethereum: Eip1193Provider & BrowserProvider;
   }
+  
+  interface HamburgerState {
+    hamburgerState: boolean
+  }
+
+  interface ConnectedAddress {
+    connectedAddress: string
+  }
 }
