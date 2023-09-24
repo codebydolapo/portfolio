@@ -36,7 +36,7 @@ export const portfolioData = [
     // },
     {
         title: 'Coming Soon',
-        desc: "Postfolio under construction...",
+        desc: "Portfolio under construction...",
         images: ['https://camo.githubusercontent.com/43d150068e9cd7ce2e4870e01c1652afbf47eadd9e00bff08782a18c3cdbf218/68747470733a2f2f657468657265756d2e6f72672f7374617469632f32383231346262363865623534343564636230363361373235333562633930632f66353161332f6865726f2e706e67'],
         liveLink: '',
         repoLink: 'https://github.com/codebydolapo'

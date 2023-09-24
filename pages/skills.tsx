@@ -11,7 +11,7 @@ import About from '../components/About'
 import Skills from '../components/Skills';
 import Blog from '../components/Blog';
 
-const Home: NextPage = () => {
+const SkillsPage: NextPage = () => {
   return (
     <div className={`${styles.main} font-montserrat text-[#4b4f56]`}>
       <Head>
@@ -20,16 +20,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className={`w-[100vw] min-h-[100vh] h-auto  text-[#000000a9] ${styles.mainbody}`}>
+      <div className={`w-[100vw] min-h-[100vh] h-auto pt-[50px] text-[#000000a9] ${styles.mainbody}`}>
         <Menu />
-        <Intro />
-        {/* <About />
-        <Portfolio />
+        {/* <Intro />
+        <About />
+        <Portfolio /> */}
         <Skills />
-        <Blog /> */}
+        {/* <Blog /> */}
       </div>
     </div>
   )
 }
 
-export default Home
+export default SkillsPage

@@ -106,31 +106,31 @@ function Menu() {
     return (
         <div className={hamburgerState ? styles.menu : styles.menuActive}>
             {hamburgerState && <>
-                <Link href='/#home'>
+                <Link href='/'>
                     <div className={`${styles.menuDiv}`} onClick={handleBurgerState}>
                         <HomeIcon className={styles.ChevronUpIcon} />
                         <h1>Home</h1>
                     </div>
                 </Link>
-                <Link href='/#about'>
+                <Link href='/about'>
                     <div className={`${styles.menuDiv}`} onClick={handleBurgerState}>
                         <MicrophoneIcon className={styles.ChevronUpIcon} />
                         <h1>About</h1>
                     </div>
                 </Link>
-                <Link href='/#portfolio'>
+                <Link href='/portfolio'>
                     <div className={`${styles.menuDiv}`} onClick={handleBurgerState}>
                         <BriefcaseIcon className={styles.ChevronUpIcon} />
                         <h1>Portfolio</h1>
                     </div>
                 </Link>
-                <Link href='/#skills'>
+                <Link href='/skills'>
                     <div className={`${styles.menuDiv}`} onClick={handleBurgerState}>
                         <CogIcon className={styles.ChevronUpIcon} />
                         <h1>Skills</h1>
                     </div>
                 </Link>
-                <Link href='/#blog'>
+                <Link href='/blog'>
                     <div className={`${styles.menuDiv}`} onClick={handleBurgerState}>
                         <BookmarkIcon className={styles.ChevronUpIcon} />
                         <h1>Blog</h1>
