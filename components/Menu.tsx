@@ -2,7 +2,7 @@ import styles from "../styles/menu.module.css"
 import { ethers } from "ethers"
 import { useEffect, useState } from "react"
 // import { useSelector } from 'react-redux'
-import { BookmarkIcon, HomeIcon, BriefcaseIcon, CogIcon, MicrophoneIcon, MailIcon,  } from "@heroicons/react/outline"
+import { BookmarkIcon, HomeIcon, BriefcaseIcon, CogIcon, MicrophoneIcon, MailIcon } from "@heroicons/react/outline"
 import Link from "next/link"
 import { useDispatch, useSelector } from 'react-redux'
 import { activateHamburger, deactivateHamburger, addConnectedAddress, removeConnectedAddress } from '../reducers/actions'
@@ -136,12 +136,12 @@ function Menu() {
                         <h1>Blog</h1>
                     </div>
                 </Link>
-                <Link href=''>
+                {/* <Link href=''>
                     <div className={`${styles.menuDiv}`} onClick={handleBurgerState}>
                         <MailIcon className={styles.ChevronUpIcon} />
                         <h1>Contact</h1>
                     </div>
-                </Link>
+                </Link> */}
                 {_storedAddress?    
                 <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#1DB954] rounded-xl md:invisible xs:visible`}>{shortenAddress(_storedAddress)}</button>:
                 <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#1DB954] rounded-xl md:invisible xs:visible`}>Connect wallet</button>

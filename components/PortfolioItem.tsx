@@ -92,10 +92,10 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
             
             <div className={`w-full md:h-[3.5rem] flex justify-start items-center xs:h-[2.5rem]`}>
                 <Link href={liveLink} passHref = {true}>
-                    <button className={`w-[42%] md:h-[2.5rem] bg-[#1DB954] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
+                    <button className={`w-[42%] md:h-[2.5rem] bg-[#000] rounded-md md:text-base text-white mx-3 xs:h-[2rem] xs:text-sm`}>View Live</button>
                 </Link>
                 <Link href={repoLink} passHref={true}>
-                    <button className={`min-w-[42%] md:h-[2.5rem] border-[1px] border-[#0000006b] font-bold rounded-md md:text-base text-[#11abc1] mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
+                    <button className={`min-w-[42%] md:h-[2.5rem] border-[1px] border-[#0000006b] font-bold rounded-md md:text-base text-[#000] mx-3 xs:h-[2rem] xs:text-sm`}>See Repo</button>
                 </Link>
             </div>
         </div>

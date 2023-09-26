@@ -34,7 +34,8 @@ function Intro() {
 
                     <div className={`md:my-[1rem]`}>
                         <Link href = "/#portfolio">
-                        <button className={`md:w-[13em] bg-[#1DB954] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button>
+                        {/* <button className={`md:w-[13em] bg-[#1DB954] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button> */}
+                        <button className={`md:w-[13em] bg-[#000] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button>
                         </Link>
                             
                         <Link href = "https://drive.google.com/file/d/17jTzZbYXJLK1zRzaA6ohbg8hVSHWfaWR/view?usp=drivesdk" passHref = {true}>
