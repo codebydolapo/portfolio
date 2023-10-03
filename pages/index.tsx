@@ -9,24 +9,36 @@ import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
 import About from '../components/About'
 import Skills from '../components/Skills';
-import Blog from '../components/Blog';
+import Blog from '../components/Blog'
+import Shop from '../components/Shop'
+import { useDispatch, useSelector } from 'react-redux'
+import { deactivateShopPopup, activateShopPopup } from '../reducers/actions'
+import ShopButton from '../components/ShopButton'
 
 const Home: NextPage = () => {
+
+  const dispatch = useDispatch()
+
+  const shopState = useSelector((state: any) => { return state.shopPopupState })
+
+  function handleShopPopup() {
+    shopState ? dispatch(deactivateShopPopup()) : dispatch(activateShopPopup())
+  }
+
+
   return (
-    <div className={`${styles.main} font-montserrat text-[#4b4f56]`}>
+    <div className={`${styles.main} font-montserrat text-[#4b4f56] relative`}>
       <Head>
         <title>codebydolapo</title>
         <meta name="description" content="codebydolapo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className={`w-[100vw] min-h-[100vh] h-auto  text-[#000000a9] ${styles.mainbody}`}>
+      <div className={`w-[100vw] min-h-[100vh] h-auto relative text-[#000000a9] ${styles.mainbody}`}>
         <Menu />
         <Intro />
-        {/* <About />
-        <Portfolio />
-        <Skills />
-        <Blog /> */}
+       {!shopState && <ShopButton/>}
+       {shopState && <Shop />}
       </div>
     </div>
   )

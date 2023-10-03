@@ -23,6 +23,19 @@ const connectedAddress = (state = "", action:{type: string, connectedAddress: st
     }
 }
 
+export const shopPopupState = (state = false, action: { type: string }) => {
+    console.log(action.type)
+    switch (action.type) {
+        case "ACTIVATE_POPUP":
+            return true
+        case "DEACTIVATE_POPUP":
+            return false
+        default:
+            return state
+    }
+}
+
 export const allReducers = combineReducers({
     hamburgerState,
+    shopPopupState
 })

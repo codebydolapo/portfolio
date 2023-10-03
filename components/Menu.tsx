@@ -143,8 +143,8 @@ function Menu() {
                     </div>
                 </Link> */}
                 {_storedAddress?    
-                <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#1DB954] rounded-xl md:invisible xs:visible`}>{shortenAddress(_storedAddress)}</button>:
-                <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#1DB954] rounded-xl md:invisible xs:visible`}>Connect wallet</button>
+                <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#000] rounded-xl md:invisible xs:visible`}>{shortenAddress(_storedAddress)}</button>:
+                <button className={`w-[90%] h-[2.5rem] text-base text-white mx-5 bg-[#000] rounded-xl md:invisible xs:visible`}>Connect wallet</button>
             }
 
             </>}
