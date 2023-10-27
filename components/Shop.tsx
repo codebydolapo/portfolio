@@ -71,7 +71,7 @@ function Shop() {
           <Button
             variant="contained"
             endIcon={<ArrowLeftIcon />}
-            className={`border-2 border-[#1da1f2] w-[10rem] h-[2.5rem] text-sm mx-2`}
+            className={`border-2 border-[#1da1f2] w-[10rem] h-[2.5rem] md:text-sm mx-2 capitalize xs:text-xs`}
             onClick={handleShopPopup}
           >
             Go Back
