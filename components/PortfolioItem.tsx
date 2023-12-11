@@ -26,46 +26,35 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
     const [rightNavVisibility, setRightNavVisibility] = useState(true)
 
 
-    // function handleNavVisibility(){
-    //     if (pictureIndex == 0){
-    //         setLeftNavVisibility(false)
-    //         setRightNavVisibility(true)
-    //     } 
-    //     //else if (pictureIndex <  images.length - 1){
-    //     //     setLeftNavVisibility(true)
-    //     //     setRightNavVisibility(true)
-    //      //} 
-    //      else if (pictureIndex == images.length - 1){
-    //         setLeftNavVisibility(true)
-    //         setRightNavVisibility(false)
-    //      }
-    // }
-
-
-
-    //function handleIndex(){
-    //     if(pictureIndex == images.length - 1){
+    // function handlePicture() {
+    //     if (pictureIndex == images.length - 1) {
     //         setPictureIndex(0)
     //         setLeftNavVisibility(false)
     //         setRightNavVisibility(true)
-    //     }else if (pictureIndex < images.length - 1){
-    //         setPictureIndex(()=> {return pictureIndex + 1})
+    //     } else if (pictureIndex < images.length - 1) {
+    //         setPictureIndex(() => { return pictureIndex + 1 })
     //         setLeftNavVisibility(true)
     //         setRightNavVisibility(false)
     //     }
     // }
 
-    function handlePicture() {
-        if (pictureIndex == images.length - 1) {
-            setPictureIndex(0)
-            setLeftNavVisibility(false)
-            setRightNavVisibility(true)
-        } else if (pictureIndex < images.length - 1) {
-            setPictureIndex(() => { return pictureIndex + 1 })
-            setLeftNavVisibility(true)
-            setRightNavVisibility(false)
-        }
+    // Add a parameter to the handlePicture function
+function handlePicture(direction: string) {
+    // Check the direction and update the pictureIndex accordingly
+    if (direction === "left") {
+        // If the user clicks on the left icon, decrease the pictureIndex by 1
+        // If the pictureIndex is 0, set it to the last index of the images array
+        setPictureIndex(pictureIndex === 0 ? images.length - 1 : pictureIndex - 1);
+    } else if (direction === "right") {
+        // If the user clicks on the right icon, increase the pictureIndex by 1
+        // If the pictureIndex is the last index of the images array, set it to 0
+        setPictureIndex(pictureIndex === images.length - 1 ? 0 : pictureIndex + 1);
     }
+
+    // Set the left and right nav visibility based on the pictureIndex
+    setLeftNavVisibility(pictureIndex > 0);
+    setRightNavVisibility(pictureIndex < images.length - 1);
+}
 
 
     return (
@@ -82,11 +71,13 @@ function PortfolioItem({ title, desc, images, liveLink, repoLink }: Props) {
             <div className={`w-full md:min-h-[20rem] overflow-hidden h-auto flex justify-center relative xs:min-h-[50vw]`}>
                 {leftNavVisibility && 
                 <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] left-2 flex justify-center items-center cursor-pointer z-[3] ${styles.directionDiv}`}>
-                    <ChevronLeftIcon className={`${styles.direction}`} onClick={handlePicture} />
+                    {/* <ChevronLeftIcon className={`${styles.direction}`} onClick={handlePicture} /> */}
+                    <ChevronLeftIcon className={`${styles.direction}`} onClick={() => handlePicture("left")} />
                 </div>}
                 <img className={`w-full h-auto rounded-lg hover:scale-[105%] ease-in-out duration-[500ms]`} src={images[pictureIndex]} alt='' />
                 {rightNavVisibility && <div className={`w-[2.5rem] h-[2.5rem] absolute bg-white rounded-full top-[45%] right-2 flex justify-center items-center cursor-pointer z-[3] ${styles.directionDiv}`}>
-                    <ChevronRightIcon className={`${styles.direction}`} onClick={handlePicture} />
+                    {/* <ChevronRightIcon className={`${styles.direction}`} onClick={handlePicture} /> */}
+                    <ChevronRightIcon className={`${styles.direction}`} onClick={() => handlePicture("right")} />
                 </div>}
             </div>
             
