@@ -2,7 +2,7 @@ export const portfolioData = [
     {
         title: 'NFTRopolis: NFT Marketplace',
         desc: "Nft Marketplace: Shop, find a jpeg you like, own it",
-        images: ['images/nftropolis/nftropolis.png', 'images/nftropolis/nftropolis2.png', 'images/nftropolis/nftropolis3.png', 'images/nftropolis/nftropolis4.png', 'images/nftropolis/nftropolis5.png', 'images/nftropolis/nftropolis6.png'],
+        images: ['images/nftropolis/nftropolis2.png', 'images/nftropolis/nftropolis3.png', 'images/nftropolis/nftropolis4.png', 'images/nftropolis/nftropolis5.png', 'images/nftropolis/nftropolis6.png'],
         liveLink: '',
         repoLink: 'https://github.com/codebydolapo/NFTropolis'
     },
