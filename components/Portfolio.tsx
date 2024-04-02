@@ -14,7 +14,7 @@ function Portfolio(){
                     <h1 className = {`md:text-4xl font-extrabold xs:text-3xl text-[#000000a6]`}>My Portfolio</h1>
                 </div>
                 <div className = {`w-full min-h-[50rem] flex flex-wrap items-start justify-around ${styles.portfolioContainer}`}>
-                    {portfolioData.map(({title, desc, images, liveLink, repoLink})=>{
+                    {portfolioData.map(({title, desc, images, liveLink, repoLink, files, type})=>{
                         return <PortfolioItem
                             title = {title}
                             desc = {desc}
@@ -22,6 +22,8 @@ function Portfolio(){
                             repoLink = {repoLink}
                             images= {images}
                             key= {title}
+                            files = {files}
+                            type = {type}
                             
                         />
                     })}

@@ -3,8 +3,19 @@ export const portfolioData = [
         title: 'NFTRopolis: NFT Marketplace',
         desc: "Nft Marketplace: Shop, find a jpeg you like, own it",
         images: ['images/nftropolis/nftropolis2.png', 'images/nftropolis/nftropolis3.png', 'images/nftropolis/nftropolis4.png', 'images/nftropolis/nftropolis5.png', 'images/nftropolis/nftropolis6.png'],
+        files: "",
         liveLink: '',
-        repoLink: 'https://github.com/codebydolapo/NFTropolis'
+        repoLink: 'https://github.com/codebydolapo/NFTropolis',
+        type: "image"
+    },
+    {
+        title: 'Weathr: Weather App For Android and iOS',
+        desc: "Weather App: Get Weather Information About Your Location",
+        images: ['images/nftropolis/nftropolis2.png', 'images/nftropolis/nftropolis3.png', 'images/nftropolis/nftropolis4.png', 'images/nftropolis/nftropolis5.png', 'images/nftropolis/nftropolis6.png'],
+        files: ["videos/weathr.mp4"],
+        liveLink: '',
+        repoLink: 'https://github.com/codebydolapo/Weathr',
+        type: "video"
     },
     // {
     //     title: 'Purple: Web3 Store',
