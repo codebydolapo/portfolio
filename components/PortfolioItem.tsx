@@ -12,7 +12,7 @@ interface Props {
     images: string[],
     liveLink: string,
     repoLink: string,
-    files: string,
+    files: string | string[],
     type: string
 }
 
