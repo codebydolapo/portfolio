@@ -30,19 +30,37 @@ function Intro() {
                             }}
                         />
                     </h3>
-                    <p className={`md:text-xl font-normal my-[1rem] xs:text-base text-[#000000] text-center`}>Pleased to have you here! I build and write about cool stuff, and you should check out...</p>
+                    {/* <p className={`md:text-xl font-normal my-[1rem] xs:text-base text-[#000000] text-center`}>Pleased to have you here! I build and write about cool stuff, and you should check out...</p> */}
+
 
                     <div className={`md:my-[1rem]`}>
-                        <Link href = "/#portfolio">
-                        {/* <button className={`md:w-[13em] bg-[#1DB954] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button> */}
-                        <button className={`md:w-[13em] bg-[#000] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button>
+                        <Link href="/#portfolio">
+                            {/* <button className={`md:w-[13em] bg-[#1DB954] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button> */}
+                            <button className={`md:w-[13em] bg-[#000] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Portfolio</button>
                         </Link>
-                            
-                        <Link href = "https://drive.google.com/file/d/17jTzZbYXJLK1zRzaA6ohbg8hVSHWfaWR/view?usp=drivesdk" passHref = {true}>
-                        <button className={`md:w-[13em] border-[2px] border-[black] bg-[#66d47e02] h-[2.5em] rounded-md text-[#000] font-bold md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Resume</button>
-                        {/* <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button> */}
+
+                        <Link href="https://drive.google.com/file/d/17jTzZbYXJLK1zRzaA6ohbg8hVSHWfaWR/view?usp=drivesdk" passHref={true}>
+                            <button className={`md:w-[13em] border-[2px] border-[black] bg-[#66d47e02] h-[2.5em] rounded-md text-[#000] font-bold md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Resume</button>
+                            {/* <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button> */}
                         </Link>
                     </div>
+
+                    <div className={`my-[1rem] h-12 w-96 md-[98%] flex items-center justify-center mt-10`}>
+                        <Link href="https://web.facebook.com/bashorun.dolapo.3" passHref={true}>
+                            <img className={`w-6 rounded-xl mx-3`} alt='' src='/icons/facebookIcon.png' />
+                        </Link>
+                        <Link href="https://www.instagram.com/_0xdolapo/" passHref={true}>
+                            <img className={`w-8 rounded-xl mx-3`} alt='' src='/icons/instagramIcon.png' />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/bashorun-dolapo-8b5164225/" passHref={true}>
+                            <img className={`w-6 rounded-xl mx-3`} alt='' src='/icons/linkedInIcon.png' />
+                        </Link>
+
+                        <Link href="https://twitter.com/the_transistorr" passHref={true}>
+                            <img className={`w-6 rounded-xl mx-3`} alt='' src='/icons/twitterIcon.png' />
+                        </Link>
+                    </div>
+
                 </div>
             </div>
         </div>
