@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import Aos from "aos"
 import "aos/dist/aos.css"
 import Link from "next/link"
+import Image from "next/image"
 
 function About() {
 

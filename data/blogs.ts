@@ -22,7 +22,7 @@ const blogs = [
         live_link: "https://link.medium.com/k0sRF0wEBLb",
         image: "/images/elliott_BLOG.jpg",
          publication_date: "28 July, 2024",
-        excerpt1: "First of all, I should mention that this isn’t going to be a boring article — I think. ",
+        excerpt1: "First of all, I should mention that this isn't going to be a boring article — I think. ",
         excerp2: "And yes, I heard you groan after reading the title. Things like “theory” and “wave” sound a little too “mathy” for some people, and I understand. ",
         featured: true
     },

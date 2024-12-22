@@ -9,11 +9,11 @@ const caseStudies = [
         featured: true
     },
     {
-        title: "Improving WhatsApp’s User Retention By Introducing an In-Chat Payment System",
+        title: "Improving WhatsApp's User Retention By Introducing an In-Chat Payment System",
         link: "",
         image: "/images/whatsapp_CS.jpg",
         publication_date: "11 November, 2024",
-        excerpt1: "The business goal is to increase WhatsApp’s user engagement and expand its value proposition via an in-chat payment feature.",
+        excerpt1: "The business goal is to increase WhatsApp's user engagement and expand its value proposition via an in-chat payment feature.",
         excerpt2: "Said feature could drive higher app usage, attract new users (especially in emerging markets with peer-to-peer transactions) and create new revenue streams for the app through transaction fees or partnerships with payment providers.",
         featured: false
     },
@@ -22,7 +22,7 @@ const caseStudies = [
         link: "",
         image: "/images/zillow_CS.jpg",
         publication_date: "11 November, 2024",
-        excerpt1: "Zillow’s property recommendations rely on basic filters and historical data. This means that the suggestions it provides sometimes, are irrelevant to the user or redundant altogether.",
+        excerpt1: "Zillow's property recommendations rely on basic filters and historical data. This means that the suggestions it provides sometimes, are irrelevant to the user or redundant altogether.",
         excerpt2: "As a result, users feel overwhelmed and frustrated when searching for homes that match their unique preferences.",
         featured: false
     },
