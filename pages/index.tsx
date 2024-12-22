@@ -2,32 +2,21 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/mainbody.module.css'
 import Navbar from '../components/Navbar'
-import Mainbody from '../components/Mainbody'
-import { title } from 'process'
 import Menu from '../components/Menu'
 import Intro from '../components/Intro';
-import Portfolio from '../components/Portfolio';
 import About from '../components/About'
-import Skills from '../components/Skills';
-import Blog from '../components/Blog'
-import Shop from '../components/Shop'
-import { useDispatch, useSelector } from 'react-redux'
-import { deactivateShopPopup, activateShopPopup } from '../reducers/actions'
-import ShopButton from '../components/ShopButton'
+import Projects from '../components/Projects'
+import blogs from '../data/blogs'
+import Sliders from '../components/Sliders'
+import caseStudies from '../data/caseStudies'
+import Certifications from '../components/Certifications'
 
 const Home: NextPage = () => {
 
-  const dispatch = useDispatch()
-
-  const shopState = useSelector((state: any) => { return state.shopPopupState })
-
-  function handleShopPopup() {
-    shopState ? dispatch(deactivateShopPopup()) : dispatch(activateShopPopup())
-  }
 
 
   return (
-    <div className={`${styles.main} font-montserrat text-[#4b4f56] relative`}>
+    <div className={`${styles.main} font-montserrat text-[#4b4f56] relative scroll-smooth`}>
       <Head>
         <title>codebydolapo</title>
         <meta name="description" content="codebydolapo" />
@@ -37,8 +26,19 @@ const Home: NextPage = () => {
       <div className={`w-[100vw] min-h-[100vh] h-auto relative text-[#000000a9] ${styles.mainbody}`}>
         <Menu />
         <Intro />
-       {!shopState && <ShopButton/>}
-       {shopState && <Shop />}
+        <About/>
+        <Sliders
+        data = {caseStudies}
+        title = {"Case Studies"}
+        id = {"caseStudies"}
+        />
+        <Sliders
+        data = {blogs}
+        title = {"Blog Posts"}
+        id = {"blogPosts"}
+        />
+        {/* <Projects/> */}
+        <Certifications/>
       </div>
     </div>
   )

@@ -1,8 +1,0 @@
-.portfolioContainer{
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.portfolioContainer::-webkit-scrollbar{
-    display: none;
-}

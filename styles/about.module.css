@@ -1,8 +1,0 @@
-.aboutContainer{
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.aboutContainer::-webkit-scrollbar{
-    display: none;
-}

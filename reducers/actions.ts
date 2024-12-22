@@ -14,14 +14,3 @@ export const removeConnectedAddress = ()=>{
     return {type: "CONNECT_ADDRESS", connectedAddress: ""}
 }
 
-export const activateShopPopup = ()=>{
-    return{
-        type: "ACTIVATE_POPUP",
-    }
-}
-
-export const deactivateShopPopup = ()=>{
-    return{
-        type: "DEACTIVATE_POPUP"
-    }
-}

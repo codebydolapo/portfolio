@@ -1,8 +1,0 @@
-.skillsContainer{
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.skillsContainer::-webkit-scrollbar{
-    display: none;
-}
