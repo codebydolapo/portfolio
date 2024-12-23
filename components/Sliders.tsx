@@ -8,7 +8,7 @@ import Link from 'next/link'
 function Slide({ title, live_link, image, prd_link }: any) {
     return (
         <Link href={live_link} passHref={true}>
-        <div className={`md:h-[15rem] md:min-w-[28rem] md:w-[28rem] my-2 mr-3 flex justify-end items-start flex-col rounded-xl xs:h-[11rem] xs:min-w-[22rem] xs:w-[22rem] hover:scale-[105%]`}>
+        <div className={`md:h-[15rem] md:min-w-[28rem] md:w-[28rem] my-2 mr-3 flex justify-end items-start flex-col rounded-xl xs:h-[11rem] xs:min-w-[20rem] xs:w-[20rem] hover:scale-[105%]`}>
             <div className={`h-inherit w-full relative rounded-lg overflow-hidden`}>
                 <img className={`h-inherit rounded-lg `} alt='' src={image} />
                 <div className={`absolute w-full bg-black md:h-[4rem] bottom-0 backdrop-filter backdrop-blur-xl bg-opacity-70 border-b border-gray-200 rounded-b-lg p-2 flex flex-col justify-around items-start xs:h-[3rem]`}>
@@ -56,7 +56,7 @@ function Sliders({ data, title, id }: any) {
                         <img className={`md:w-[80%] h-auto rounded-lg xs:w-[98%]`} alt="" src={data[0].image} />
                     </div>
                 </div>
-                <div className={`w-full h-[40%] flex flex-row items-center justify-between overflow-x-scroll overflow-y-hidden scrollbar-hidden md:mt-0 md:px-2 xs:px-5 xs:mt-[2rem]`}>
+                <div className={`w-full h-[40%] flex flex-row items-center justify-between overflow-x-scroll overflow-y-hidden scrollbar-hidden md:mt-0 md:px-2 xs:px-0 xs:mt-[2rem]`}>
                     {data.map(({ title, image, live_link }: any) => {
                         return <Slide
                             title={title}
