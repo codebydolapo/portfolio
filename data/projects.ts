@@ -10,7 +10,7 @@ const projects = [
     {
         title: "ChatterBoxx: AI Based Chatbot For All Your Queries",
         image: "/images/chatterboxx/chatterboxx1.png",
-        live_link: "",
+        live_link: "https://chatterboxx.vercel.app/",
         publication_date: "2024",
         excerpt1: "An Open-Source AI chatbot enabling users to switch between multiple AI models seamlessly during active prompting",
         excerpt2: ""
