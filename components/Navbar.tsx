@@ -131,7 +131,7 @@ function Navbar() {
             <div className={`w-full h-[50px] bg-[#000] flex flex-row fixed z-[5]`}>
                 <div className={`w-1/2 h-full px-2 flex flex-row justify-start items-center`}>
                     <img className={`md:h-[40px] md:w-[40px] rounded-full mr-3 xs:w-[30px] xs:h-[30px]`} src='/icons/logo.jpg' alt='' />
-                    <h1 className={`text-[#fff] md:text-3xl font-bold font-oswald xs:text-xl`}>SCRUMptious.Com</h1>
+                    <h1 className={`text-[#fff] md:text-3xl font-bold font-oswald xs:text-xl`}>DolapoBash</h1>
                 </div>
                 <div className={`w-1/2 h-full px-3 flex flex-row justify-end items-center`}>
                     
