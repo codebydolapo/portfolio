@@ -10,6 +10,8 @@ import blogs from '../data/blogs'
 import Sliders from '../components/Sliders'
 import caseStudies from '../data/caseStudies'
 import Certifications from '../components/Certifications'
+import Footer from '../components/Footer'
+import projects from '../data/projects'
 
 const Home: NextPage = () => {
 
@@ -37,8 +39,14 @@ const Home: NextPage = () => {
         title = {"Blog Posts"}
         id = {"blogPosts"}
         />
+        <Sliders
+        data = {projects}
+        title = {"Projects"}
+        id = {"projects"}
+        />
         {/* <Projects/> */}
         <Certifications/>
+        <Footer/>
       </div>
     </div>
   )

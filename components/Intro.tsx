@@ -1,6 +1,7 @@
 
 import Typewriter from 'typewriter-effect'
 import Link from 'next/link'
+import { resumeLink } from '../data/resume'
 
 
 
@@ -40,7 +41,7 @@ function Intro() {
                             <button className={`md:w-[13em] bg-[#000] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>About Me</button>
                         </Link>
 
-                        <Link href="https://drive.google.com/file/d/13ddUxj55hbySGnLoIWpi_PkIcxas_-Yd/view?usp=sharing" passHref={true}>
+                        <Link href={resumeLink} passHref={true}>
                             <button className={`md:w-[13em] border-[2px] border-[black] bg-[#66d47e02] h-[2.5em] rounded-md text-[#000] font-bold md:mx-[1.9rem] xs:w-[47vw] xs:mx-1 hover:scale-[105%] duration-[500ms]`}>My Resume</button>
                             {/* <button className={`md:w-[13em] bg-[#4b4f56] h-[2.5em] rounded-md text-white md:mx-[1.9rem] xs:w-[47vw] xs:mx-1`}>My Resume</button> */}
                         </Link>
