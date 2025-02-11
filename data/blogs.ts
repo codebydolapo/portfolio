@@ -1,5 +1,14 @@
 const blogs = [
     {
+        title: "Real Estate With React Native—Everything That Went Into Building Homely",
+        live_link: "https://medium.com/p/1ecb7975827c",
+        image: "/images/homely.jpg",
+        publication_date: "9 february, 2024",
+        excerpt1: `I should start by saying that React Native is great, but React Native with Expo is even better.`,
+        excerpt2: `For starters, the project was built using React Native as a frontend, and Appwrite as a backend`,
+        featured: true
+    },
+    {
         title: "The AGILE Methodology From a Dummy's perspective",
         live_link: "https://medium.com/@bashorundolapo/everything-i-learned-in-the-last-few-months-as-a-product-manager-992d9507266d",
         image: "/images/agile_BLOG.jpg",

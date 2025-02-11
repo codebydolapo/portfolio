@@ -21,6 +21,13 @@ const certifications = [
         verification: "https://www.credly.com/badges/f661e833-9ac5-45b3-986f-d93cac74296a"
     },
     {
+        title: "Super Certified From Pendo",
+        image: "/images/certifications/super-certified.png",
+        date: " 7 January, 2025",
+        issuer: "Pendo x MTP",
+        verification: "https://www.credly.com/badges/9d843237-409b-4eca-ab95-7dd6b683d53a"
+    },
+    {
         title: "Digital Marketing",
         image: "/images/certifications/haptics.png",
         date: "November 13, 2023",
